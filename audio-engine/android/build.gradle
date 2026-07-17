@@ -1,0 +1,160 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
+// No buildscript block: this library is consumed via autolinking, and the
+// consuming app's root project provides AGP / Kotlin / RNGP on the classpath
+// (a versionless local `classpath "com.android.tools.build:gradle"` breaks
+// under Gradle 9).
+
+def reactNativeArchitectures() {
+  def value = rootProject.getProperties().get("reactNativeArchitectures")
+  return value ? value.split(",") : ["armeabi-v7a", "arm64-v8a", "x86_64", "x86"]
+}
+
+def isNewArchitectureEnabled() {
+  return rootProject.hasProperty("newArchEnabled") && rootProject.getProperty("newArchEnabled") == "true"
+}
+
+apply plugin: "com.android.library"
+apply plugin: "org.jetbrains.kotlin.android"
+
+// Runs codegen for this library from the `codegenConfig` block in package.json.
+// This is what makes the C++ TurboModule (NativeCustomNodesModule) auto-register
+// through autolinking in the consuming app — no OnLoad.cpp edit required.
+if (isNewArchitectureEnabled()) {
+  apply plugin: "com.facebook.react"
+}
+
+def getExtOrDefault(name) {
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties["AudioEngine_" + name]
+}
+
+def getExtOrIntegerDefault(name) {
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["AudioEngine_" + name]).toInteger()
+}
+
+def toPlatformFileString(String path) {
+  if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+    path = path.replace(File.separatorChar, '/' as char)
+  }
+  return path
+}
+
+// Resolve react-native-audio-api's install location robustly (handles monorepos
+// / scoped-package nesting) so CMake can find its headers + prebuilt .so.
+def resolveAudioApiDirectory() {
+  def audioApiPackage = file(["node", "--print", "require.resolve('react-native-audio-api/package.json')"].execute(null, rootDir).text.trim())
+  return audioApiPackage.parentFile
+}
+
+def audioApiDir = resolveAudioApiDirectory()
+
+// react-native's install location, so CMake can include RN's shared cmake
+// utils (react-native-flags.cmake) needed by the generated codegen CMakeLists.
+def resolveReactNativeDirectory() {
+  def reactNativePackage = file(["node", "--print", "require.resolve('react-native/package.json')"].execute(null, rootDir).text.trim())
+  return reactNativePackage.parentFile
+}
+
+def reactNativeDir = resolveReactNativeDirectory()
+
+android {
+  namespace "com.biosyncare.audioengine"
+
+  ndkVersion getExtOrDefault("ndkVersion")
+  compileSdkVersion getExtOrIntegerDefault("compileSdkVersion")
+
+  defaultConfig {
+    minSdkVersion getExtOrIntegerDefault("minSdkVersion")
+    targetSdkVersion getExtOrIntegerDefault("targetSdkVersion")
+
+    externalNativeBuild {
+      cmake {
+        cppFlags "-O2 -frtti -fexceptions -Wall -fstack-protector-all"
+        abiFilters (*reactNativeArchitectures())
+        arguments "-DANDROID_STL=c++_shared",
+                  "-DAUDIO_API_DIR=${toPlatformFileString(audioApiDir.path)}",
+                  "-DREACT_NATIVE_DIR=${toPlatformFileString(reactNativeDir.path)}",
+                  "-DIS_NEW_ARCHITECTURE_ENABLED=${isNewArchitectureEnabled()}"
+      }
+    }
+  }
+
+  externalNativeBuild {
+    cmake {
+      path "CMakeLists.txt"
+    }
+  }
+
+  buildFeatures {
+    buildConfig true
+    prefab true
+  }
+
+  // Do not repackage RN's own shared libs; the app already ships them.
+  packagingOptions {
+    excludes = [
+      "**/libreact_nativemodule_core.so",
+      "**/libjsi.so",
+      "**/libreactnative.so",
+      "**/libreact-native-audio-api.so"
+    ]
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_17
+    targetCompatibility JavaVersion.VERSION_17
+  }
+
+  sourceSets {
+    main {
+      if (isNewArchitectureEnabled()) {
+        java.srcDirs += ["${project.buildDir}/generated/source/codegen/java"]
+      }
+    }
+  }
+}
+
+repositories {
+  mavenCentral()
+  google()
+}
+
+dependencies {
+  implementation "com.facebook.react:react-android"
+}
+
+// ---------------------------------------------------------------------------
+// Cross-link to react-native-audio-api's prebuilt native lib.
+// Ported verbatim from the host app's android/app/build.gradle: the app CMake
+// imports libreact-native-audio-api.so from audio-api's merged_native_libs, so
+// audio-api's mergeNativeLibs must run before our CMake configure/build.
+// ---------------------------------------------------------------------------
+evaluationDependsOn(":react-native-audio-api")
+
+afterEvaluate {
+  def audioApiProject = findProject(":react-native-audio-api")
+  if (audioApiProject == null) {
+    return
+  }
+
+  def mergeDebugNativeLibs = audioApiProject.tasks.named("mergeDebugNativeLibs")
+  def mergeReleaseNativeLibs = audioApiProject.tasks.named("mergeReleaseNativeLibs")
+
+  tasks.matching {
+    it.name == "preDebugBuild" ||
+      it.name.startsWith("configureCMakeDebug") ||
+      it.name.startsWith("buildCMakeDebug")
+  }.configureEach {
+    dependsOn(mergeDebugNativeLibs)
+  }
+
+  tasks.matching {
+    it.name == "preReleaseBuild" ||
+      it.name.startsWith("configureCMakeRelWithDebInfo") ||
+      it.name.startsWith("buildCMakeRelWithDebInfo") ||
+      it.name.startsWith("configureCMakeRelease") ||
+      it.name.startsWith("buildCMakeRelease")
+  }.configureEach {
+    dependsOn(mergeReleaseNativeLibs)
+  }
+}

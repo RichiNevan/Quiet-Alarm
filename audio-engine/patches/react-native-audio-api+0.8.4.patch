@@ -1,0 +1,24 @@
+diff --git a/node_modules/react-native-audio-api/android/src/main/cpp/audioapi/android/AudioAPIModule.h b/node_modules/react-native-audio-api/android/src/main/cpp/audioapi/android/AudioAPIModule.h
+index 04c4c13..09c44e8 100644
+--- a/node_modules/react-native-audio-api/android/src/main/cpp/audioapi/android/AudioAPIModule.h
++++ b/node_modules/react-native-audio-api/android/src/main/cpp/audioapi/android/AudioAPIModule.h
+@@ -5,7 +5,6 @@
+ 
+ #include <ReactCommon/CallInvokerHolder.h>
+ #include <fbjni/fbjni.h>
+-#include <react/jni/CxxModuleWrapper.h>
+ #include <react/jni/JMessageQueueThread.h>
+ #include <memory>
+ #include <utility>
+diff --git a/node_modules/react-native-audio-api/android/src/main/cpp/audioapi/android/core/NativeAudioPlayer.hpp b/node_modules/react-native-audio-api/android/src/main/cpp/audioapi/android/core/NativeAudioPlayer.hpp
+index 54d3b49..548771d 100644
+--- a/node_modules/react-native-audio-api/android/src/main/cpp/audioapi/android/core/NativeAudioPlayer.hpp
++++ b/node_modules/react-native-audio-api/android/src/main/cpp/audioapi/android/core/NativeAudioPlayer.hpp
+@@ -2,7 +2,6 @@
+ 
+ 
+ #include <fbjni/fbjni.h>
+-#include <react/jni/CxxModuleWrapper.h>
+ #include <react/jni/JMessageQueueThread.h>
+ #include <memory>
+ #include <utility>
