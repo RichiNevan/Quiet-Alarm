@@ -1,0 +1,3 @@
+Very good. Now, this app wants to be an alarm app. This binaural sound needs to play at a time that is set by the user, WITHOUT THE PHONE SCREEN LIGHTING UP, OR ANY INTERACTION BE NEEDED BY THE USER. That's why is called quiet alarm. It is thought for lucid dreaming, to have a quiet alarm coming out from the phone, without startling the user or having him to move.
+
+Therefore, we need to investigate the native functioning of android and ios (i say native, because i am assuming we will need to work with native code), in order to understand how to make it work. I have tried in the past with no success. please dont be naive and dont rush, create a proper testing protocol, so that we dont "create a castle" in order to find out later that the foundation does not work.
