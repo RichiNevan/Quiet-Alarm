@@ -1,0 +1,6 @@
+{
+  "platforms": ["android"],
+  "android": {
+    "modules": ["com.richinevan.quietalarm.alarm.AlarmSchedulerModule"]
+  }
+}

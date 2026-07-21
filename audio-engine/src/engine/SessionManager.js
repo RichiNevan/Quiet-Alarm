@@ -42,8 +42,13 @@ const nativeRoomDebug = (event, payload = {}) =>
   recordSessionDebugEvent('rooms-debug:SessionManager', event, payload);
 
 export class SessionManager {
-  constructor() {
-    this.audioContext = new AudioContext();
+  // `options.context`: inject a pre-built BaseAudioContext (e.g. an
+  // OfflineAudioContext) instead of creating a live AudioContext. Used by
+  // renderOffline() to bounce a preset to a buffer without opening a device
+  // audio stream. Defaults to the normal live AudioContext for every other
+  // caller — no behavior change unless you pass this.
+  constructor(options = {}) {
+    this.audioContext = options.context ?? new AudioContext();
     this.voices = []; // {node, volume}
     this.preset = null;
     this.duration = 900;
@@ -337,6 +342,37 @@ export class SessionManager {
 
     this._setState('stopped');
     nativeRoomDebug('stop:end', this._debugSummary());
+  }
+
+  // Bounce the loaded preset to an AudioBuffer using an injected
+  // OfflineAudioContext (pass one via `new SessionManager({ context })`).
+  // Renders exactly `context.length` samples (set at OfflineAudioContext
+  // construction) as fast as the device can, no live audio device involved.
+  // Does NOT touch the timer/animation/foreground-service/AppState machinery
+  // that start() wires up — those all assume a live, foregrounded app, which
+  // is precisely what an offline render does not have.
+  async renderOffline() {
+    if (typeof this.audioContext.startRendering !== 'function') {
+      throw new Error(
+        'renderOffline() requires a SessionManager constructed with an ' +
+          'OfflineAudioContext: new SessionManager({ context: offlineCtx })',
+      );
+    }
+    if (!this.preset) {
+      throw new Error('renderOffline() called before loadPreset()');
+    }
+    this._createVoices();
+    this._startVoices();
+    const buffer = await this.audioContext.startRendering();
+    this.voices.forEach(({ node }) => {
+      try {
+        node.disconnect();
+      } catch (_e) {
+        // already disconnected
+      }
+    });
+    this.voices = [];
+    return buffer;
   }
 
   setMasterVolume(volume) {

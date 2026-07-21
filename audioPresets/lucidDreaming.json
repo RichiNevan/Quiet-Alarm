@@ -1,0 +1,366 @@
+[
+  {
+    "_id": "Transcend - Lucid Dreaming",
+    "header": {
+      "d": 900,
+      "uses": [
+        "lucid dreaming",
+        "lucid dream practice",
+        "wake back to bed",
+        "dream awareness",
+        "dream entry",
+        "sleep awareness",
+        "conscious dreaming",
+        "dream observation",
+        "remember dreams",
+        "dream recall",
+        "hypnagogic observation",
+        "dream intention"
+      ],
+      "techDescPrt": "Alvo principal: 5 Hz low-theta. Uma camada Binaural muito sutil centrada em 300 Hz carrega um batimento de 5 Hz, correspondente a portadoras aproximadas de 297.5/302.5 Hz em fones. Ela usa panOsc 0, então permanece estática no centro e omite corretamente os campos de período e transição de panning. O principal componente-alvo compatível com alto-falantes é uma díade Symmetry de 5 Hz em 200 e 250 Hz, oferecendo um fio de consciência low-theta limpo com cor harmônica estável. Uma linha Symmetry lenta em 0.04 Hz passa por 187.5, 225, 266.666666 e 333.33333 Hz usando uma sequência rotate/reverse; cria uma escala harmônica onírica esparsa para observação da entrada no sonho sem transformar o preset em névoa imersiva. Não há guia respiratória e não há bloom intencional, para manter alta a saliência dos sinais. Este preset é pensado para prática noturna wake-back-to-bed, observação hipnagógica, consciência da entrada no sonho e preparação para sonho lúcido. Não garante sonho lúcido, lembrança de sonhos, controle do sonho, melhora do sono ou benefício médico.",
+      "evidenceNotes": "Lucid-dreaming framing remains speculative and exploratory. Auditory sleep evidence is contextual only and does not establish lucid-dream induction, dream recall improvement, or dream control efficacy. The preset is intended as a clean low-theta cue for wake-back-to-bed and dream-entry awareness practice.",
+      "secondaryTargetHzs": [],
+      "usesPrt": [
+        "sonho lúcido",
+        "prática de sonho lúcido",
+        "wake back to bed",
+        "consciência do sonho",
+        "entrada no sonho",
+        "consciência no sono",
+        "sonho consciente",
+        "observação do sonho",
+        "lembrar sonhos",
+        "recordação de sonhos",
+        "observação hipnagógica",
+        "intenção no sonho"
+      ],
+      "communionSchedule": false,
+      "aestheticProfile": {
+        "poeticFit": "lucid-threshold",
+        "register": "sedative",
+        "density": "clean",
+        "symmetryPacing": "low-theta-target-plus-sparse-slow-oneiric-line",
+        "intervalGrammar": [
+          "low-theta-primary",
+          "5hz-binaural",
+          "5hz-speaker-dyad-anchor",
+          "static-center-binaural",
+          "no-breath-guide",
+          "no-bloom",
+          "sparse-oneiric-line",
+          "perfect-fourth",
+          "perfect-fifth",
+          "minor-third-shadow-color",
+          "clean-awareness-thread"
+        ],
+        "bloomRole": "none"
+      },
+      "primaryTargetHz": 5,
+      "purposeEsp": "apoyar conciencia cerca de la entrada al sueño y práctica wake-back-to-bed",
+      "usesIta": [
+        "sogno lucido",
+        "pratica del sogno lucido",
+        "wake back to bed",
+        "consapevolezza del sogno",
+        "ingresso nel sogno",
+        "consapevolezza nel sonno",
+        "sogno consapevole",
+        "osservazione del sogno",
+        "ricordare i sogni",
+        "richiamo dei sogni",
+        "osservazione ipnagogica",
+        "intenzione nel sogno"
+      ],
+      "techDescEsp": "Objetivo principal: 5 Hz low-theta. Una capa Binaural muy sutil centrada en 300 Hz lleva un batido de 5 Hz, correspondiente a portadoras aproximadas de 297.5/302.5 Hz en auriculares. Usa panOsc 0, por lo que permanece estática en el centro y omite correctamente los campos de período y transición de paneo. El principal componente objetivo compatible con altavoces es una díada Symmetry de 5 Hz en 200 y 250 Hz, dando un hilo de conciencia low-theta limpio con color armónico estable. Una línea Symmetry lenta a 0.04 Hz se mueve por 187.5, 225, 266.666666 y 333.33333 Hz usando una secuencia rotate/reverse; crea una escala armónica onírica escasa para observar la entrada al sueño sin convertir el preset en una bruma inmersiva. No hay guía respiratoria ni bloom intencional, para mantener alta la saliencia de las señales. Este preset está pensado para práctica nocturna wake-back-to-bed, observación hipnagógica, conciencia de entrada al sueño y preparación para sueño lúcido. No garantiza sueño lúcido, recuerdo de sueños, control del sueño, mejora del sueño ni beneficio médico.",
+      "med2prt": "Sonho Lúcido",
+      "description": "For sleep-threshold awareness, dream observation, and wake-back-to-bed practice.",
+      "clinicalScope": "wellness",
+      "creator": "fabbri-gpt5.4-content-refresh-v0.9.1",
+      "med2ita": "Sogno Lucido",
+      "noisePolicy": {
+        "defaultGainDb": null,
+        "enabledByDefault": false,
+        "role": "off-by-default",
+        "maskingTolerance": "very-low",
+        "allowedColors": [],
+        "notes": "No preset-level synthetic-noise recommendation. User/global controls may remain available by product policy, but no noise should be enabled by default for this clean lucid-practice preset.",
+        "maxGainDb": null,
+        "userControllable": true,
+        "available": false,
+        "defaultColor": null,
+        "cleanModeAvailable": true
+      },
+      "marketScope": {
+        "internal": "lucid-practice-wellness-design",
+        "BR": "supportive-wellness",
+        "US": "general-wellness-low-risk",
+        "EU": "general-wellness"
+      },
+      "cautionTags": [
+        "nighttime-only",
+        "driving-unsafe",
+        "wake-back-to-bed",
+        "advanced-use",
+        "drowsy-use",
+        "eyes-closed-compatible",
+        "sleep-threshold-practice",
+        "not-sleep-treatment",
+        "not-insomnia-treatment",
+        "not-lucid-dream-guarantee",
+        "not-dream-control-guarantee",
+        "not-dream-recall-guarantee",
+        "not-standalone-care"
+      ],
+      "isDefault": false,
+      "advancedUser": true,
+      "designReferenceVersion": "4.12.0",
+      "provenance": {
+        "generatedAt": "2026-06-03T14:41:11.847Z",
+        "generatedBy": "GPT-5.5T / R. Fabbri",
+        "catalogVersion": "1.4.0-candidate",
+        "clinicalSafetyReviewedBy": [],
+        "notes": "Metadata updated to match the submitted final Lucid Dreaming voice design. Voice/audio parameters unchanged. The preset is documented as a clean 5 Hz low-theta Transcend preset for wake-back-to-bed and dream-entry awareness practice, with very subtle 300 Hz Binaural thread, static center panning, explicit 200/250 Hz Symmetry dyad anchor, sparse 0.04 Hz oneiric harmonic line, no breath guide, no bloom, and no lucid-dream guarantee.",
+        "aestheticReviewedBy": [
+          "R. Fabbri"
+        ],
+        "soundscapeMapVersion": "0.1.11",
+        "reviewedBy": [
+          "R. Fabbri"
+        ],
+        "engineSpecVersion": "bsc-audio-engine-spec-0.1.0",
+        "scientificReferencesVersion": "0.1.7-candidate",
+        "designReferenceVersion": "4.12.0",
+        "legalRegulatoryReviewedBy": [],
+        "scientificReviewedBy": []
+      },
+      "evidenceRefs": [
+        "ABELN_2014",
+        "JIRAKITTAYAKORN_2018",
+        "KANZLER_2023"
+      ],
+      "engineCompatibility": {
+        "panningPolicyVersion": "bsc-panning-policy-0.2.5",
+        "designMaxSymmetryRateHz": 50,
+        "engineSpecVersion": "bsc-audio-engine-spec-0.1.0",
+        "notes": "Pinned for v4.12.0 design validation. The Binaural voice uses panOsc 0 and correctly omits panOscPeriod and panOscTrans. Symmetry voices correctly omit panning fields. This preset uses one very subtle Binaural 5 Hz target layer centered at 300 Hz, one explicit 5 Hz Symmetry dyad at 200/250 Hz, and one sparse 0.04 Hz oneiric Symmetry line. No breathing guide is used.",
+        "breathingRuntimePolicyVersion": "bsc-breathing-runtime-0.1.0",
+        "symmetryTimingModel": "noteSep=1/pulseRateHz",
+        "engineMaxSymmetryRateHz": 50,
+        "minSymmetryNoteSepMs": 20
+      },
+      "sessionStyle": "contemplative",
+      "safetyEvidenceBasis": {
+        "role": "scope-limiting",
+        "notes": "Safety/scope boundaries constrain copy; not efficacy support. Avoid lucid-dream induction guarantees, dream-control claims, dream-recall improvement claims, sleep-disorder, insomnia, psychiatric, neurological, clinical, or medical claims.",
+        "refs": []
+      },
+      "techDescIta": "Target principale: 5 Hz low-theta. Uno strato Binaural molto sottile centrato su 300 Hz porta un battimento a 5 Hz, corrispondente a portanti in cuffia circa 297.5/302.5 Hz. Usa panOsc 0, quindi resta statico al centro e omette correttamente i campi di periodo e transizione del panning. La componente target principale compatibile anche con speaker è una diade Symmetry a 5 Hz su 200 e 250 Hz, che offre un filo di consapevolezza low-theta pulito con colore armonico stabile. Una linea Symmetry lenta a 0.04 Hz attraversa 187.5, 225, 266.666666 e 333.33333 Hz usando una sequenza rotate/reverse; crea una scala armonica onirica rada per l'osservazione dell'ingresso nel sogno senza trasformare il preset in una bruma immersiva. Non c'è guida respiratoria e non c'è bloom intenzionale, così la salienza dei segnali rimane alta. Questo preset è pensato per pratica notturna wake-back-to-bed, osservazione ipnagogica, consapevolezza dell'ingresso nel sogno e preparazione al sogno lucido. Non garantisce sogni lucidi, richiamo dei sogni, controllo del sogno, miglioramento del sonno o beneficio medico.",
+      "isShownIndex": 36,
+      "createdAt": "2026-04-02T07:07:18.942Z",
+      "soundscapePolicy": {
+        "maskingTolerance": "low",
+        "role": "aesthetic-world",
+        "runtimeDefaultNotes": "The soundscape policy describes a candidate very-low aesthetic-world default. Production runtime should preserve Clean Mode and enable any soundscape default only after rendered approval confirms low masking, no foreground events, and preserved 5 Hz awareness-thread clarity.",
+        "cleanModeAvailable": true,
+        "runtimeDefaultStatus": "candidate-default-requires-rendered-approval",
+        "maxGainDb": -24,
+        "recommendedTags": [
+          "night-air",
+          "insects-night-soft",
+          "room-tone",
+          "rain-soft",
+          "forest-bed",
+          "instrument-tonal"
+        ],
+        "avoidTags": [
+          "voice",
+          "urban",
+          "obvious-loop",
+          "rain-thunder",
+          "birds-busy",
+          "fire-crackle",
+          "ocean-birds",
+          "semantic-content"
+        ],
+        "compatibilityClass": "clean-default",
+        "defaultGainDb": -30,
+        "productionDefaultMode": "clean-until-rendered-approval",
+        "defaultMode": "very-low",
+        "notes": "Very-low sparse night ambience may support the lucid-threshold aesthetic only after rendered approval. Clean Mode remains the production-safe baseline. Avoid semantic content, foreground wildlife, thunder, hard crackle, urban sound, or obvious loops because this preset depends on thin 5 Hz cue salience and dream-entry traceability."
+      },
+      "requiredTier": "premium",
+      "breathingRegime": "none",
+      "evidenceBasis": "speculative_design",
+      "isCreatedByAI": true,
+      "inhaleExhaleRatio": null,
+      "techDesc": "Primary target: 5 Hz low-theta. A very subtle Binaural layer centered at 300 Hz carries a 5 Hz beat, corresponding to approximate 297.5/302.5 Hz headphone carriers. It uses panOsc 0, so it stays static center and correctly omits panning period and transition fields. The main speaker-compatible target component is a 5 Hz Symmetry dyad at 200 and 250 Hz, giving a clean low-theta awareness thread with stable harmonic color. A slow Symmetry line at 0.04 Hz moves through 187.5, 225, 266.666666, and 333.33333 Hz using a rotate/reverse sequence; it creates a sparse oneiric harmonic ladder for dream-entry observation without turning the preset into immersive haze. There is no breath guide and no intentional bloom, so cue salience remains high. This preset is intended for nighttime wake-back-to-bed practice, hypnagogic observation, dream-entry awareness, and lucid-dream preparation. It does not guarantee lucid dreaming, dream recall, dream control, sleep improvement, or medical benefit.",
+      "updatedAt": "2026-06-03T14:41:11.847Z",
+      "publicClaimLevel": "wellness-support",
+      "isLanding": false,
+      "purposeIta": "sostenere consapevolezza vicino all'ingresso nel sogno e pratica wake-back-to-bed",
+      "purposePrt": "apoiar consciência perto da entrada no sonho e prática wake-back-to-bed",
+      "carrierInteractionProfile": {
+        "slowOneiricLine": [
+          {
+            "classification": "slow oneiric harmonic ladder",
+            "sourceFrequenciesHz": [
+              187.5,
+              225,
+              266.666666,
+              333.33333
+            ],
+            "intendedRole": "sparse dream-entry color and long-form traceability without immersive bloom"
+          }
+        ],
+        "primaryFrameHz": [
+          187.5,
+          200,
+          225,
+          250,
+          266.666666,
+          300,
+          333.33333
+        ],
+        "primaryLowThetaLayer": [
+          {
+            "intendedRole": "very subtle headphone-only low-theta thread",
+            "classification": "5 Hz binaural beat around 300 Hz center",
+            "sourceFrequenciesHz": [
+              297.5,
+              302.5
+            ]
+          },
+          {
+            "classification": "5 Hz Symmetry dyad anchor",
+            "sourceFrequenciesHz": [
+              200,
+              250
+            ],
+            "intendedRole": "clear speaker-compatible low-theta awareness thread with stable fourth/fifth color"
+          }
+        ],
+        "intentional": true,
+        "notAClinicalGammaClaim": true,
+        "panningRationale": "The Binaural voice uses panOsc 0, so it is static center and correctly omits panOscPeriod and panOscTrans. This preserves a stable, thin awareness thread suitable for wake-back-to-bed practice.",
+        "claimLevel": "aesthetic_attentional_color"
+      },
+      "evidenceTier": "speculative",
+      "intensityTier": "medium",
+      "mixProfile": {
+        "cueSaliencePriority": "high",
+        "loudnessClass": "standard",
+        "densityClass": "clean",
+        "notes": "Lucid-practice context; verify that the 5 Hz Symmetry dyad remains clear but not intrusive, that the very quiet 300 Hz binaural thread is audible enough on headphones if intended, that the 0.04 Hz oneiric line remains background, and that soundscape defaults do not mask or distract from dream-entry awareness.",
+        "auditScope": [
+          "clean",
+          "default-soundscape",
+          "max-soundscape",
+          "headphones",
+          "speaker"
+        ],
+        "mixAuditRequired": true
+      },
+      "med2eng": "Lucid Dreaming",
+      "hasBreathGuide": false,
+      "voiceTypes": [
+        "Binaural",
+        "Symmetry"
+      ],
+      "bloomPolicy": "avoided",
+      "descEsp": "Para conciencia en el umbral del sueño, observación de los sueños y práctica wake-back-to-bed.",
+      "targetBand": [
+        "low-theta"
+      ],
+      "version": "1.4.0",
+      "purpose": "support conscious awareness near dream entry and wake-back-to-bed practice",
+      "descPrt": "Para consciência no limiar do sono, observação dos sonhos e prática wake-back-to-bed.",
+      "descEng": "For sleep-threshold awareness, dream observation, and wake-back-to-bed practice.",
+      "intervalClaimLevel": "aesthetic_only",
+      "headphonesMode": "recommended",
+      "usesEsp": [
+        "sueño lúcido",
+        "práctica de sueño lúcido",
+        "wake back to bed",
+        "conciencia del sueño",
+        "entrada al sueño",
+        "conciencia durante el sueño",
+        "sueño consciente",
+        "observación del sueño",
+        "recordar sueños",
+        "recuerdo de sueños",
+        "observación hipnagógica",
+        "intención de sueño"
+      ],
+      "group": "Transcend",
+      "aestheticIntent": "A thin, traceable low-theta thread for dream-entry awareness; the subtle 300 Hz binaural layer, 200/250 Hz Symmetry dyad, and sparse 0.04 Hz oneiric line should support observation at the sleep threshold without becoming heavy, hazy, or immersive.",
+      "med2esp": "Sueño Lúcido",
+      "launchStatus": "advanced",
+      "descIta": "Per consapevolezza alla soglia del sonno, osservazione dei sogni e pratica wake-back-to-bed.",
+      "med2": "Lucid Dreaming"
+    },
+    "voices": [
+      {
+        "iniVolume": 0.0266072505979881,
+        "beat": 5,
+        "type": "Binaural",
+        "panOsc": 0,
+        "centerHz": 300
+      },
+      {
+        "pulseRateHz": 5,
+        "type": "Symmetry",
+        "permutationProgram": null,
+        "noteSlots": [
+          {
+            "hz": [
+              200,
+              250
+            ]
+          }
+        ],
+        "iniVolume": 0.06309573444801933
+      },
+      {
+        "type": "Symmetry",
+        "pulseRateHz": 0.04,
+        "permfunc": 4,
+        "permutationProgram": {
+          "sequence": [
+            {
+              "op": "rotate",
+              "by": 1
+            },
+            {
+              "op": "reverse"
+            }
+          ],
+          "mode": "sequence",
+          "version": 1
+        },
+        "iniVolume": 0.05,
+        "noteSlots": [
+          {
+            "hz": [
+              187.5
+            ]
+          },
+          {
+            "hz": [
+              225
+            ]
+          },
+          {
+            "hz": [
+              266.666666
+            ]
+          },
+          {
+            "hz": [
+              333.33333
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

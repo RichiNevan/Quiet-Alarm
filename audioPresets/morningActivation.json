@@ -1,0 +1,361 @@
+[
+  {
+    "_id": "Perform - Morning Ignition",
+    "voices": [
+      {
+        "type": "Martigli-Binaural",
+        "panOscPeriod": 160,
+        "lowHz": 277.5,
+        "panOsc": 2,
+        "isOn": true,
+        "iniVolume": 0.05623413251903491,
+        "highHz": 370,
+        "beat": 15
+      },
+      {
+        "noteSlots": [
+          {
+            "hz": [
+              231.25
+            ]
+          }
+        ],
+        "pulseRateHz": 15,
+        "type": "Symmetry",
+        "iniVolume": 0.18836490894898006
+      },
+      {
+        "noteSlots": [
+          {
+            "hz": [
+              185
+            ]
+          },
+          {
+            "hz": [
+              185,
+              233.125
+            ]
+          },
+          {
+            "hz": [
+              185,
+              362.5
+            ]
+          },
+          {
+            "hz": [
+              270
+            ]
+          }
+        ],
+        "iniVolume": 0.08,
+        "pulseRateHz": 3.75,
+        "type": "Symmetry",
+        "permutationProgram": {
+          "family": "cyclic",
+          "version": 1,
+          "cycleCount": 12,
+          "mode": "generatorWalk"
+        },
+        "permfunc": 4
+      },
+      {
+        "id": "1779636509730",
+        "iniVolume": 0.10592537251772889,
+        "noteSlots": [
+          {
+            "hz": [
+              233.125,
+              370
+            ]
+          },
+          {
+            "hz": [
+              362.5,
+              370
+            ]
+          },
+          {
+            "hz": [
+              370
+            ]
+          },
+          {
+            "hz": [
+              190
+            ]
+          }
+        ],
+        "permfunc": 4,
+        "permutationProgram": {
+          "leads": 1,
+          "mode": "method",
+          "version": 1,
+          "method": "plainHunt"
+        },
+        "pulseRateHz": 7.5,
+        "type": "Symmetry"
+      }
+    ],
+    "header": {
+      "inhaleExhaleRatio": 0.52,
+      "updatedAt": "2026-05-24T15:45:11.205Z",
+      "techDesc": "Primary target: 15 Hz low-beta. A low-volume Martigli-Binaural layer carries a 15 Hz beat while sweeping from 277.5 to 370 Hz with user-scaled breathing motion and valid sinusoidal panning: panOsc 2 with a 160 s period and no panOscTrans field. This creates a smooth, slow left-right activation contour without abrupt crossfades. A strong 15 Hz Symmetry driver at 231.25 Hz provides the main ignition anchor. Additional Symmetry layers at 7.5 Hz and 3.75 Hz act as base-two subharmonic ignition scaffolding: 7.5 Hz is half of the primary 15 Hz rate, and 3.75 Hz is one quarter of it. These subharmonic layers are part of the rhythmic ramp-up texture and are not separate therapeutic targets. The harmonic frame centers on 185, 231.25, 277.5, and 370 Hz, forming an approximate 4:5:6:8 activation grammar. The 231.25 Hz driver gives the 5-part major color, the Martigli-Binaural sweep covers the 277.5/370 upper activation region, and the 7.5/3.75 Hz Symmetry layers reuse 185, 190, 233.125, 270, 362.5, and 370 Hz as ignition colors and near-anchor bloom. The result is a multi-scale morning ignition design: bright, rhythmic, layered, and forward-moving. It is intended for morning ramp-up and pre-work activation, not fatigue treatment, sleep replacement, circadian correction, stimulant-like efficacy, or guaranteed productivity.",
+      "isCreatedByAI": true,
+      "evidenceBasis": "direct_auditory_cognition_plus_breathwork",
+      "publicClaimLevel": "wellness-support",
+      "purposePrt": "apoiar uma rampa matinal clara para energia ativa",
+      "purposeIta": "sostenere una rampa mattutina chiara verso energia attiva",
+      "mixProfile": {
+        "cueSaliencePriority": "critical",
+        "densityClass": "rich",
+        "loudnessClass": "intense",
+        "notes": "High-density morning activation context; verify that the 15 Hz target remains dominant, that 7.5 Hz and 3.75 Hz feel like ignition scaffolding rather than sleepy co-targets, that the 277.5-370 Hz Martigli-Binaural sweep and sinusoidal panning are energizing rather than restless, and that the 185/231.25/277.5/370 Hz harmonic frame remains bright without becoming harsh.",
+        "auditScope": [
+          "clean",
+          "default-soundscape",
+          "max-soundscape",
+          "headphones",
+          "speaker"
+        ],
+        "mixAuditRequired": true
+      },
+      "intensityTier": "high",
+      "evidenceTier": "emerging",
+      "purpose": "support a clear morning ramp-up into active energy",
+      "version": "1.4.0",
+      "targetBand": [
+        "low-beta",
+        "subharmonic-half-rate",
+        "subharmonic-quarter-rate"
+      ],
+      "hasBreathGuide": true,
+      "med2eng": "Morning Ignition",
+      "descEsp": "Para mañanas, arranques lentos y el calentamiento previo al trabajo cuando necesitas encenderte.",
+      "bloomPolicy": "intentional-strong",
+      "voiceTypes": [
+        "Martigli-Binaural",
+        "Symmetry"
+      ],
+      "headphonesMode": "recommended",
+      "intervalClaimLevel": "aesthetic_only",
+      "descPrt": "Para manhãs, partidas lentas e o aquecimento pré-trabalho quando você precisa ligar.",
+      "descEng": "For mornings, slow starts, and the pre-work ramp-up when you need to switch on.",
+      "group": "Perform",
+      "usesEsp": [
+        "energía matinal",
+        "despertar",
+        "empezar el día",
+        "ponerse en marcha",
+        "impulso matinal",
+        "primer bloque de trabajo",
+        "mañana lenta",
+        "foco matinal",
+        "despertar la mente",
+        "empezar a trabajar",
+        "arranque lento",
+        "entrar en ritmo"
+      ],
+      "med2": "Morning Ignition",
+      "launchStatus": "core",
+      "descIta": "Per mattine, avvii lenti e la rampa pre-lavoro quando hai bisogno di accenderti.",
+      "med2esp": "Activación Matutina",
+      "aestheticIntent": "Bright multi-scale ignition; the 15 Hz low-beta anchor, 7.5/3.75 Hz base-two subharmonic scaffold, 277.5-370 Hz breathing-linked sweep, and 4:5:6:8 harmonic frame should feel like a layered morning switch-on rather than a flat stimulant push.",
+      "usesPrt": [
+        "energia da manhã",
+        "acordar",
+        "começar o dia",
+        "entrar no ritmo",
+        "impulso matinal",
+        "primeiro bloco de trabalho",
+        "manhã lenta",
+        "foco matinal",
+        "despertar a mente",
+        "começar a trabalhar",
+        "partida lenta",
+        "entrar em movimento"
+      ],
+      "communionSchedule": false,
+      "uses": [
+        "morning energy",
+        "wake up",
+        "start the day",
+        "get going",
+        "morning boost",
+        "first work block",
+        "sluggish morning",
+        "morning focus",
+        "wake up the mind",
+        "start work",
+        "slow start",
+        "get moving"
+      ],
+      "secondaryTargetHzs": [
+        7.5,
+        3.75
+      ],
+      "techDescPrt": "Alvo principal: 15 Hz low-beta. Uma camada Martigli-Binaural de baixo volume carrega um batimento de 15 Hz enquanto varre de 277.5 a 370 Hz com movimento respiratório escalado pelo usuário e panning sinusoidal válido: panOsc 2 com período de 160 s e sem campo panOscTrans. Isso cria um contorno de ativação esquerda-direita lento e suave, sem crossfades abruptos. Um driver Symmetry forte de 15 Hz em 231.25 Hz fornece a principal âncora de ignição. Camadas Symmetry adicionais em 7.5 Hz e 3.75 Hz atuam como andaimes sub-harmônicos de ignição em base dois: 7.5 Hz é metade da taxa primária de 15 Hz, e 3.75 Hz é um quarto dela. Essas camadas sub-harmônicas fazem parte da textura rítmica de rampa e não são alvos terapêuticos separados. A moldura harmônica se centra em 185, 231.25, 277.5 e 370 Hz, formando uma gramática de ativação aproximada 4:5:6:8. O driver em 231.25 Hz dá a cor maior da parte 5, a varredura Martigli-Binaural cobre a região superior de ativação 277.5/370, e as camadas Symmetry de 7.5/3.75 Hz reutilizam 185, 190, 233.125, 270, 362.5 e 370 Hz como cores de ignição e bloom próximo aos ancoramentos. O resultado é um desenho de ignição matinal multiescala: claro, rítmico, em camadas e direcionado para frente. É pensado para rampa matinal e ativação pré-trabalho, não para tratamento de fadiga, substituição de sono, correção circadiana, eficácia semelhante a estimulante ou produtividade garantida.",
+      "evidenceNotes": "Morning activation and clarity support is indirect and protocol-sensitive, based on auditory cognition/arousal literature plus breathing-support context. The 15 Hz low-beta component is framed as morning activation support, while 7.5 Hz and 3.75 Hz are base-two subharmonic ignition scaffolds rather than independent therapeutic targets. Wellness/performance support only; do not claim reliable energy improvement, fatigue treatment, sleep replacement, productivity enhancement, or clinical efficacy.",
+      "d": 900,
+      "techDescEsp": "Objetivo principal: 15 Hz low-beta. Una capa Martigli-Binaural de bajo volumen lleva un batido de 15 Hz mientras barre de 277.5 a 370 Hz con movimiento respiratorio escalado por el usuario y paneo sinusoidal válido: panOsc 2 con período de 160 s y sin campo panOscTrans. Esto crea un contorno de activación izquierda-derecha lento y suave, sin crossfades abruptos. Un driver Symmetry fuerte de 15 Hz en 231.25 Hz proporciona el ancla principal de ignición. Capas Symmetry adicionales a 7.5 Hz y 3.75 Hz actúan como andamiaje subarmónico de ignición en base dos: 7.5 Hz es la mitad de la tasa primaria de 15 Hz, y 3.75 Hz es un cuarto de ella. Estas capas subarmónicas forman parte de la textura rítmica de rampa y no son objetivos terapéuticos separados. El marco armónico se centra en 185, 231.25, 277.5 y 370 Hz, formando una gramática de activación aproximada 4:5:6:8. El driver en 231.25 Hz da el color mayor de la parte 5, el barrido Martigli-Binaural cubre la región superior de activación 277.5/370, y las capas Symmetry de 7.5/3.75 Hz reutilizan 185, 190, 233.125, 270, 362.5 y 370 Hz como colores de ignición y bloom cerca de los anclajes. El resultado es un diseño de ignición matinal multiescala: luminoso, rítmico, estratificado y orientado hacia adelante. Está pensado para la rampa matinal y la activación previa al trabajo, no para tratamiento de fatiga, sustitución del sueño, corrección circadiana, eficacia tipo estimulante ni productividad garantizada.",
+      "med2prt": "Ativação Matinal",
+      "usesIta": [
+        "energia del mattino",
+        "svegliarsi",
+        "iniziare la giornata",
+        "mettersi in moto",
+        "boost mattutino",
+        "primo blocco di lavoro",
+        "mattina lenta",
+        "focus del mattino",
+        "svegliare la mente",
+        "iniziare a lavorare",
+        "partenza lenta",
+        "muoversi"
+      ],
+      "purposeEsp": "apoyar una rampa matinal clara hacia energía activa",
+      "primaryTargetHz": 15,
+      "aestheticProfile": {
+        "register": "bright-golden-activation",
+        "poeticFit": "morning-ignition",
+        "bloomRole": "intentional-bright",
+        "intervalGrammar": [
+          "low-beta-primary",
+          "base-two-subharmonic-scaffold",
+          "15-7-5-3-75-rhythmic-stack",
+          "4-5-6-8-harmonic-frame",
+          "major-third-color",
+          "perfect-fifth",
+          "octave-anchor",
+          "near-anchor-bloom",
+          "cyclic-generator-walk",
+          "plain-hunt-half-rate-color",
+          "sinusoidal-lateral-activation"
+        ],
+        "symmetryPacing": "low-beta-target-plus-half-rate-and-quarter-rate-subharmonic-scaffolds",
+        "density": "rich"
+      },
+      "med2ita": "Attivazione Mattutina",
+      "noisePolicy": {
+        "enabledByDefault": false,
+        "defaultGainDb": null,
+        "role": "off-by-default",
+        "maskingTolerance": "very-low",
+        "allowedColors": [],
+        "userControllable": true,
+        "notes": "No preset-level synthetic-noise recommendation. User/global controls may remain available by product policy, but no noise should be enabled by default for this morning activation preset.",
+        "maxGainDb": null,
+        "available": false,
+        "defaultColor": null,
+        "cleanModeAvailable": true
+      },
+      "creator": "fabbri-gpt5.4-content-refresh-v0.9.1",
+      "description": "For mornings, slow starts, and the pre-work ramp-up when you need to switch on.",
+      "clinicalScope": "wellness",
+      "marketScope": {
+        "BR": "supportive-wellness",
+        "US": "general-wellness-low-risk",
+        "internal": "wellness-design",
+        "EU": "general-wellness"
+      },
+      "cautionTags": [
+        "stimulating",
+        "fatigue-sensitive",
+        "morning-use",
+        "daytime-preferred",
+        "not-evening-use",
+        "anxiety-sensitive",
+        "not-sleep-substitute",
+        "not-fatigue-treatment",
+        "not-sleep-disorder-treatment",
+        "not-productivity-guarantee",
+        "not-standalone-care"
+      ],
+      "designReferenceVersion": "4.12.0",
+      "advancedUser": false,
+      "techDescIta": "Target principale: 15 Hz low-beta. Uno strato Martigli-Binaural a basso volume porta un battimento a 15 Hz mentre scorre da 277.5 a 370 Hz con movimento respiratorio scalato dall'utente e panning sinusoidale valido: panOsc 2 con periodo di 160 s e senza campo panOscTrans. Questo crea un contorno di attivazione sinistra-destra lento e fluido, senza crossfade bruschi. Un forte driver Symmetry a 15 Hz su 231.25 Hz offre l'ancora principale di accensione. Strati Symmetry aggiuntivi a 7.5 Hz e 3.75 Hz agiscono come impalcatura di accensione subarmonica in base due: 7.5 Hz è metà del ritmo principale a 15 Hz, e 3.75 Hz ne è un quarto. Questi strati subarmonici fanno parte della trama ritmica di rampa e non sono target terapeutici separati. La cornice armonica ruota attorno a 185, 231.25, 277.5 e 370 Hz, formando una grammatica di attivazione approssimativa 4:5:6:8. Il driver a 231.25 Hz dà il colore maggiore della parte 5, lo sweep Martigli-Binaural copre la regione superiore di attivazione 277.5/370, e gli strati Symmetry a 7.5/3.75 Hz riutilizzano 185, 190, 233.125, 270, 362.5 e 370 Hz come colori di accensione e bloom vicino agli ancoraggi. Il risultato è un design di accensione mattutina multi-scala: luminoso, ritmico, stratificato e orientato in avanti. È pensato per rampa mattutina e attivazione pre-lavoro, non per trattamento della fatica, sostituzione del sonno, correzione circadiana, efficacia simile a stimolante o produttività garantita.",
+      "safetyEvidenceBasis": {
+        "refs": [],
+        "notes": "Safety/scope boundaries constrain copy; not efficacy support. Avoid fatigue-disorder, sleep-disorder, circadian, stimulant, nootropic, productivity-guarantee, ADHD, or clinical energy claims.",
+        "role": "scope-limiting"
+      },
+      "isShownIndex": 21,
+      "sessionStyle": "active",
+      "engineCompatibility": {
+        "panningPolicyVersion": "bsc-panning-policy-0.2.5",
+        "designMaxSymmetryRateHz": 50,
+        "engineSpecVersion": "bsc-audio-engine-spec-0.1.0",
+        "notes": "Pinned for v4.12.0 design validation. Panning is used only on the Martigli-Binaural voice. panOsc 2 is sinusoidal panning and correctly includes panOscPeriod while omitting panOscTrans. Symmetry voices correctly omit panning fields. This preset uses one Martigli-Binaural 15 Hz target layer, one explicit 15 Hz Symmetry target, one 3.75 Hz subharmonic cyclic Symmetry layer, and one 7.5 Hz subharmonic plain-hunt Symmetry layer.",
+        "breathingRuntimePolicyVersion": "bsc-breathing-runtime-0.1.0",
+        "engineMaxSymmetryRateHz": 50,
+        "symmetryTimingModel": "noteSep=1/pulseRateHz",
+        "minSymmetryNoteSepMs": 20
+      },
+      "provenance": {
+        "generatedAt": "2026-05-24T15:45:11.205Z",
+        "generatedBy": "GPT-5.5T / R. Fabbri",
+        "catalogVersion": "1.4.0-candidate",
+        "clinicalSafetyReviewedBy": [],
+        "notes": "Metadata updated to match the submitted Morning Ignition voice design. Voice/audio parameters unchanged. The preset is documented as a multi-scale 15 / 7.5 / 3.75 Hz morning ignition design with a 4:5:6:8 harmonic frame and valid panOsc 2 sinusoidal panning on the Martigli-Binaural voice.",
+        "aestheticReviewedBy": [],
+        "reviewedBy": [
+          "R. Fabbri"
+        ],
+        "engineSpecVersion": "bsc-audio-engine-spec-0.1.0",
+        "soundscapeMapVersion": "0.1.11",
+        "scientificReferencesVersion": "0.1.7-candidate",
+        "designReferenceVersion": "4.12.0",
+        "legalRegulatoryReviewedBy": [],
+        "scientificReviewedBy": []
+      },
+      "evidenceRefs": [
+        "BASU_BANERJEE_2023",
+        "GARCIA_ARGIBAY_2019",
+        "ELNAZER_2026",
+        "INGENDOH_2023",
+        "ZACCARO_2018",
+        "LABORDE_2022"
+      ],
+      "createdAt": "2026-04-02T07:07:18.942Z",
+      "breathingRegime": "gentle-introduction",
+      "requiredTier": "premium",
+      "soundscapePolicy": {
+        "productionDefaultMode": "clean-until-rendered-approval",
+        "defaultMode": "very-low",
+        "notes": "Very-low ambience may support daylight semantics, but Clean Mode remains the production-safe baseline until rendered approval. Avoid voices, busy birds, harsh transients, thunder, crackle, obvious loops, gusty wind, dark/night-heavy beds, or ambience that makes the preset distracting or fatigue-prone.",
+        "recommendedTags": [
+          "room-tone",
+          "water-distant",
+          "instrument-tonal",
+          "wind-soft",
+          "birds-soft"
+        ],
+        "avoidTags": [
+          "voice",
+          "urban",
+          "birds-busy",
+          "fire-crackle",
+          "rain-thunder",
+          "obvious-loop",
+          "wind-gusts",
+          "mammal-lowmid",
+          "night-heavy"
+        ],
+        "compatibilityClass": "conditioned-low-default",
+        "defaultGainDb": -30,
+        "cleanModeAvailable": true,
+        "runtimeDefaultStatus": "candidate-default-requires-rendered-approval",
+        "maxGainDb": -24,
+        "maskingTolerance": "low",
+        "runtimeDefaultNotes": "The soundscape policy describes a candidate very-low daylight-glue default. Production runtime should preserve Clean Mode and enable the soundscape default only after preset-level rendered mix approval confirms low masking, no excess event salience, and acceptable fatigue profile.",
+        "processingRecommendation": {
+          "status": "future-runtime-experiment",
+          "carrierAwareEq": "recommended-before-default-upgrade",
+          "notchDepthDb": -6
+        },
+        "role": "daylight-glue"
+      }
+    }
+  }
+]

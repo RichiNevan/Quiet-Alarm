@@ -1,0 +1,1 @@
+int raw fallback_alarm 0x0

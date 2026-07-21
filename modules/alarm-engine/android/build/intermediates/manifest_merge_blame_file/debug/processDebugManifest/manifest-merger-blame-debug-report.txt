@@ -1,0 +1,53 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.richinevan.quietalarm.alarm" >
+4
+5    <uses-sdk android:minSdkVersion="24" />
+6    <!--
+7       Merged into the app manifest by the Android manifest merger; survives
+8       `expo prebuild` because this library lives outside android/.
+9       See docs/feasibility-and-test-protocol.md for why the wake chain has
+10       to be a plain BroadcastReceiver + Service (no JS at fire time).
+11    -->
+12    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+12-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:6:3-71
+12-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:6:20-69
+13    <uses-permission
+13-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:7:3-103
+14        android:name="android.permission.SCHEDULE_EXACT_ALARM"
+14-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:7:20-74
+15        android:maxSdkVersion="32" />
+15-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:7:75-101
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+16-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:8:3-74
+16-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:8:20-72
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+17-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:9:3-89
+17-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:9:20-87
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:10:3-65
+18-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:10:20-63
+19    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+19-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:11:3-74
+19-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:11:20-72
+20
+21    <application>
+21-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:12:3-20:17
+22        <receiver
+22-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:13:5-15:33
+23            android:name="com.richinevan.quietalarm.alarm.AlarmReceiver"
+23-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:14:7-67
+24            android:exported="false" />
+24-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:15:7-31
+25
+26        <service
+26-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:16:5-19:54
+27            android:name="com.richinevan.quietalarm.alarm.AlarmAudioService"
+27-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:17:7-71
+28            android:exported="false"
+28-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:18:7-31
+29            android:foregroundServiceType="mediaPlayback" />
+29-->/Users/breeze/_DEV/quiet-alarm/modules/alarm-engine/android/src/main/AndroidManifest.xml:19:7-52
+30    </application>
+31
+32</manifest>
