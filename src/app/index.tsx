@@ -1,6 +1,7 @@
 import { Href, Link, useRouter } from "expo-router";
 import React, { useEffect, useState } from "react";
 import { FlatList, Platform, Pressable, StyleSheet, Text, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { AlarmRow } from "../components/alarms/AlarmRow";
 import { BioSynCarePromo } from "../components/BioSynCarePromo";
@@ -33,10 +34,11 @@ function IosStatusBanner() {
 export default function AlarmListScreen() {
   const { alarms, loaded, toggleAlarm } = useAlarms();
   const router = useRouter();
+  const insets = useSafeAreaInsets();
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
+      <View style={[styles.header, { paddingTop: insets.top + 16 }]}>
         <Text style={styles.title}>Quiet Alarms</Text>
         <Pressable
           onPress={() => router.push("/alarm-edit" as Href)}
@@ -70,7 +72,9 @@ export default function AlarmListScreen() {
         />
       )}
 
-      <BioSynCarePromo />
+      <View style={{ paddingBottom: insets.bottom }}>
+        <BioSynCarePromo />
+      </View>
     </View>
   );
 }
@@ -82,7 +86,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     paddingHorizontal: 20,
-    paddingTop: 60,
     paddingBottom: 16,
   },
   title: { color: colors.textPrimary, fontSize: 32, fontWeight: "700" },

@@ -1,0 +1,260 @@
+[
+  {
+    "_id": "Heal - Fall Asleep",
+    "header": {
+      "isShownIndex": 6,
+      "safetyEvidenceBasis": {
+        "refs": [],
+        "role": "none",
+        "notes": ""
+      },
+      "requiredTier": "free",
+      "mixProfile": {
+        "loudnessClass": "sensitive",
+        "notes": "Sensitive sleep-onset context; preserve low loudness, minimal density, and clear but non-intrusive 5 Hz cue salience. Audit clean and soundscape-enabled conditions.",
+        "densityClass": "minimal",
+        "auditScope": [
+          "clean",
+          "default-soundscape",
+          "max-soundscape",
+          "headphones"
+        ],
+        "mixAuditRequired": true,
+        "cueSaliencePriority": "critical"
+      },
+      "d": 900,
+      "med2prt": "Pegar no Sono",
+      "usesPrt": [
+        "não consigo dormir",
+        "pegar no sono",
+        "início do sono",
+        "mente acelerada na hora de dormir",
+        "ansiedade na hora de dormir",
+        "adormecer",
+        "dificuldade para dormir",
+        "calma antes de dormir",
+        "insônia",
+        "deitado sem sono",
+        "pensamentos acelerados à noite",
+        "suporte para insônia"
+      ],
+      "techDescEng": "Primary target: 5 Hz low-theta for sleep-onset support. The clearest target-frequency component is an isochronous Symmetry pulse at 5 Hz on a 200 Hz pitch. A binaural layer centered at 240 Hz creates a 5 Hz beat through approximately 237.5/242.5 Hz carriers. A standalone Martigli layer sweeps from 160 to 240 Hz and provides user-controlled sleep-induction breathing guidance. The Martigli high anchor sits near the binaural carrier pair, creating a subtle upper-phase cross-voice bloom around the breathing contour; this is treated as an aesthetic and psychoacoustic warmth feature, not as an added therapeutic claim. Auditory sleep evidence is limited but relevant, so the claim remains sleep-support and wellness-oriented. Not a treatment for insomnia or other sleep disorders.",
+      "clinicalScope": "symptom-support",
+      "updatedAt": "2026-05-22T06:12:47.140Z",
+      "purposeEsp": "facilitar la transición al sueño",
+      "intentionalBloomRationale": "The Martigli sweep from 160 to 240 Hz intentionally places its upper anchor near the 237.5/242.5 Hz binaural carriers, creating a subtle upper-phase cross-voice bloom. This is documented as aesthetic/psychoacoustic warmth only and does not change the primary 5 Hz low-theta target or evidence basis.",
+      "publicClaimLevel": "relief-support",
+      "evidenceNotes": "Sleep-onset support is informed by limited binaural/sleep studies and broader acoustic-stimulation insomnia literature, but BSC is not exact acoustic-stimulation therapy. Wellness sleep-support only; not insomnia treatment.",
+      "aestheticIntent": "Quiet, dark, and low-demand; the 5 Hz low-theta pulse and 160–240 Hz sleep-breathing contour should create a simple bedtime descent. Any bloom near the 240 Hz upper Martigli anchor should feel warm and settling, not decorative or attention-grabbing.",
+      "cautionTags": [
+        "nighttime-only",
+        "driving-unsafe"
+      ],
+      "breathingRegime": "sleep-induction",
+      "techDescIta": "Target principale: 5 Hz low-theta per il supporto all'inizio del sonno. La componente target più esplicita è un impulso Symmetry isocrono a 5 Hz su una frequenza di 200 Hz. Uno strato binaurale centrato a 240 Hz crea un battimento di 5 Hz tramite portanti approssimativamente a 237.5/242.5 Hz. Uno strato Martigli indipendente scorre da 160 a 240 Hz e fornisce guida respiratoria di induzione al sonno controllata dall'utente. L'ancoraggio alto Martigli si trova vicino alla coppia di portanti binaurali, creando un bloom sottile tra voci nella fase alta del respiro; questo è trattato come una caratteristica estetica e psicoacustica di calore, non come nuova rivendicazione terapeutica. L'evidenza uditiva sul sonno è limitata ma rilevante, quindi la rivendicazione resta orientata al supporto del sonno e al benessere. Non è un trattamento per insonnia o altri disturbi del sonno.",
+      "uses": [
+        "can't fall asleep",
+        "fall asleep",
+        "sleep onset",
+        "bedtime mind racing",
+        "bedtime anxiety",
+        "drift to sleep",
+        "trouble sleeping",
+        "pre-sleep calm",
+        "can't sleep",
+        "lying awake",
+        "mind racing at night",
+        "insomnia support"
+      ],
+      "descPrt": "Para pensamentos acelerados na hora de dormir e a transição para o sono.",
+      "advancedUser": false,
+      "description": "For racing thoughts at bedtime and the transition into sleep.",
+      "descEsp": "Para pensamientos acelerados a la hora de dormir y la transición hacia el sueño.",
+      "evidenceBasis": "direct_auditory_sleep",
+      "engineCompatibility": {
+        "symmetryTimingModel": "noteSep=1/pulseRateHz",
+        "engineMaxSymmetryRateHz": 50,
+        "engineSpecVersion": "bsc-audio-engine-spec-0.1.0",
+        "minSymmetryNoteSepMs": 20,
+        "notes": "Pinned for v4.12.0 design validation; future engine changes do not automatically expand this preset design permission.",
+        "breathingRuntimePolicyVersion": "bsc-breathing-runtime-0.1.0",
+        "designMaxSymmetryRateHz": 50
+      },
+      "inhaleExhaleRatio": 0.4,
+      "med2": "Fall Asleep",
+      "voiceTypes": [
+        "Binaural",
+        "Martigli",
+        "Symmetry"
+      ],
+      "bloomPolicy": "intentional-soft",
+      "techDescEsp": "Objetivo principal: 5 Hz low-theta para apoyo al inicio del sueño. El componente objetivo más explícito es un pulso Symmetry isócrono a 5 Hz sobre una frecuencia de 200 Hz. Una capa binaural centrada en 240 Hz crea un batido de 5 Hz mediante portadoras aproximadamente en 237.5/242.5 Hz. Una capa Martigli independiente barre de 160 a 240 Hz y proporciona guía respiratoria de inducción al sueño controlada por el usuario. El anclaje alto de Martigli queda cerca del par de portadoras binaurales, creando un bloom sutil entre voces en la fase alta de la respiración; esto se trata como un recurso estético y psicoacústico de calidez, no como una nueva afirmación terapéutica. La evidencia auditiva sobre sueño es limitada pero relevante; por eso la afirmación queda como apoyo al sueño y bienestar. No es tratamiento para insomnio u otros trastornos del sueño.",
+      "techDescPrt": "Alvo principal: 5 Hz low-theta para apoio ao início do sono. O componente-alvo mais explícito é um pulso Symmetry isócrono em 5 Hz sobre uma frequência de 200 Hz. Uma camada binaural centrada em 240 Hz cria um batimento de 5 Hz por meio de portadoras aproximadamente em 237.5/242.5 Hz. Uma camada Martigli independente varre de 160 a 240 Hz e fornece guia respiratória de indução ao sono controlada pelo usuário. O ancoramento alto Martigli fica próximo ao par de portadoras binaurais, criando um bloom sutil entre vozes na fase alta da respiração; isso é tratado como recurso estético e psicoacústico de calor, não como nova alegação terapêutica. A evidência auditiva sobre sono é limitada, mas relevante; por isso a alegação permanece como suporte ao sono e bem-estar. Não é tratamento para insônia ou outros distúrbios do sono.",
+      "evidenceTier": "moderate",
+      "provenance": {
+        "soundscapeMapVersion": "0.1.11",
+        "aestheticReviewedBy": [],
+        "clinicalSafetyReviewedBy": [],
+        "scientificReferencesVersion": "0.1.7-candidate",
+        "designReferenceVersion": "4.12.0",
+        "generatedBy": "GPT-5.5T / R. Fabbri",
+        "scientificReviewedBy": [],
+        "legalRegulatoryReviewedBy": [],
+        "catalogVersion": "1.4.0-candidate",
+        "notes": "Metadata updated to match the submitted Fall Asleep voice design. Voices are intentionally unchanged in this metadata pass.",
+        "generatedAt": "2026-05-22T06:12:47.140Z",
+        "reviewedBy": [
+          "R. Fabbri"
+        ],
+        "engineSpecVersion": "bsc-audio-engine-spec-0.1.0"
+      },
+      "createdAt": "2026-04-02T07:07:18.942Z",
+      "marketScope": {
+        "US": "general-wellness-low-risk",
+        "internal": "clinical-scope-design",
+        "EU": "wellness-softened",
+        "BR": "supportive-wellness"
+      },
+      "creator": "fabbri-gpt5.4-content-refresh-v0.9.1",
+      "primaryTargetHz": 5,
+      "intensityTier": "low",
+      "purposePrt": "facilitar a transição para o sono",
+      "med2esp": "Conciliar el Sueño",
+      "descEng": "For racing thoughts at bedtime and the transition into sleep.",
+      "usesEsp": [
+        "no puedo dormirme",
+        "conciliar el sueño",
+        "inicio del sueño",
+        "mente acelerada al acostarse",
+        "ansiedad al acostarme",
+        "entrar en el sueño",
+        "problemas para dormir",
+        "calma antes de dormir",
+        "no puedo dormir",
+        "despierto en la cama",
+        "pensamientos acelerados de noche",
+        "apoyo para el insomnio"
+      ],
+      "soundscapePolicy": {
+        "role": "aesthetic-world",
+        "productionDefaultMode": "clean-until-rendered-approval",
+        "recommendedTags": [
+          "night-air",
+          "rain-soft",
+          "water-distant",
+          "insects-night",
+          "instrument-tonal"
+        ],
+        "defaultGainDb": -30,
+        "maxGainDb": -24,
+        "runtimeDefaultStatus": "candidate-default-requires-rendered-approval",
+        "defaultMode": "very-low",
+        "compatibilityClass": "conditioned-low-default",
+        "cleanModeAvailable": true,
+        "runtimeDefaultNotes": "The soundscape policy describes a candidate aesthetic runtime default. Production should preserve Clean Mode and enable the soundscape default only after preset-level rendered mix approval.",
+        "maskingTolerance": "low",
+        "notes": "Very-low night-air, rain-soft, water-distant, or sparse night-insect texture may support the bedtime aesthetic as a runtime soundscape candidate. Clean Mode remains available. Use only after rendered listening confirms that the 5 Hz pulse and Martigli breathing contour remain clear and non-intrusive.",
+        "avoidTags": [
+          "rain-thunder",
+          "birds-busy",
+          "ocean-birds",
+          "fire-crackle",
+          "voice",
+          "urban",
+          "mammal-lowmid",
+          "obvious-loop"
+        ]
+      },
+      "headphonesMode": "speaker-safe",
+      "version": "1.4.0",
+      "med2eng": "Fall Asleep",
+      "med2ita": "Addormentarsi",
+      "group": "Heal",
+      "sessionStyle": "background",
+      "descIta": "Per pensieri che corrono all'ora di dormire e la transizione verso il sonno.",
+      "aestheticProfile": {
+        "symmetryPacing": "isochronic-target",
+        "intervalGrammar": [
+          "isochronic-unison",
+          "perfect-fifth"
+        ],
+        "poeticFit": "fall-asleep",
+        "density": "minimal",
+        "bloomRole": "subtle",
+        "register": "sedative"
+      },
+      "isCreatedByAI": true,
+      "noisePolicy": {
+        "notes": "Optional user-controlled synthetic noise only; default off until rendered cue-salience review approves a default.",
+        "defaultGainDb": null,
+        "maxGainDb": -30,
+        "allowedColors": [
+          "pink",
+          "brown"
+        ],
+        "cleanModeAvailable": true,
+        "available": true,
+        "enabledByDefault": false,
+        "userControllable": true,
+        "maskingTolerance": "very-low",
+        "defaultColor": "pink",
+        "role": "sleep-masking"
+      },
+      "designReferenceVersion": "4.12.0",
+      "purpose": "ease the transition into sleep",
+      "hasBreathGuide": true,
+      "purposeIta": "facilitare il passaggio al sonno",
+      "usesIta": [
+        "non riesco ad addormentarmi",
+        "addormentarsi",
+        "inizio del sonno",
+        "mente attiva a letto",
+        "ansia prima di dormire",
+        "scivolare nel sonno",
+        "difficoltà a dormire",
+        "calma presonno",
+        "non riesco a dormire",
+        "restare sveglio a letto",
+        "pensieri che corrono di notte",
+        "supporto per l'insonnia"
+      ],
+      "launchStatus": "core",
+      "communionSchedule": false,
+      "intervalClaimLevel": "aesthetic_only",
+      "techDesc": "Primary target: 5 Hz low-theta for sleep-onset support. The clearest target-frequency component is an isochronous Symmetry pulse at 5 Hz on a 200 Hz pitch. A binaural layer centered at 240 Hz creates a 5 Hz beat through approximately 237.5/242.5 Hz carriers. A standalone Martigli layer sweeps from 160 to 240 Hz and provides user-controlled sleep-induction breathing guidance. The Martigli high anchor sits near the binaural carrier pair, creating a subtle upper-phase cross-voice bloom around the breathing contour; this is treated as an aesthetic and psychoacoustic warmth feature, not as an added therapeutic claim. Auditory sleep evidence is limited but relevant, so the claim remains sleep-support and wellness-oriented. Not a treatment for insomnia or other sleep disorders.",
+      "evidenceRefs": [
+        "ABELN_2014",
+        "JIRAKITTAYAKORN_2018",
+        "WANG_2025_ACOUSTIC_INSOMNIA",
+        "KANZLER_2023",
+        "BAE_2021"
+      ],
+      "targetBand": [
+        "low-theta"
+      ]
+    },
+    "voices": [
+      {
+        "iniVolume": 0.11,
+        "panOsc": 0,
+        "centerHz": 240,
+        "panOscTrans": 0,
+        "type": "Binaural",
+        "panOscPeriod": 0,
+        "beat": 5
+      },
+      {
+        "pulseRateHz": 5,
+        "noteSlots": [
+          {
+            "hz": [
+              200
+            ]
+          }
+        ],
+        "type": "Symmetry",
+        "iniVolume": 0.11
+      }
+    ]
+  }
+]

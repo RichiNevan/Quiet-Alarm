@@ -1,0 +1,286 @@
+[
+  {
+    "_id": "Heal - Deep Sleep Restore",
+    "voices": [
+      {
+        "panOsc": 0,
+        "panOscPeriod": 0,
+        "centerHz": 202.5,
+        "type": "Binaural",
+        "beat": 2.5,
+        "iniVolume": 0.1,
+        "panOscTrans": 0
+      },
+      {
+        "pulseRateHz": 0.15625,
+        "permfunc": 0,
+        "permutationProgram": null,
+        "type": "Symmetry",
+        "noteSlots": [
+          {
+            "hz": [
+              150
+            ]
+          },
+          {
+            "hz": [
+              250
+            ]
+          }
+        ],
+        "iniVolume": 0.1
+      },
+      {
+        "permutationProgram": null,
+        "permfunc": 0,
+        "noteSlots": [
+          {
+            "hz": [
+              152.5
+            ]
+          },
+          {
+            "hz": [
+              252.5
+            ]
+          }
+        ],
+        "iniVolume": 0.06,
+        "type": "Symmetry",
+        "pulseRateHz": 0.078125
+      }
+    ],
+    "header": {
+      "primaryTargetHz": 2.5,
+      "safetyEvidenceBasis": {
+        "role": "none",
+        "refs": [],
+        "notes": ""
+      },
+      "createdAt": "2026-04-02T07:07:18.942Z",
+      "intensityTier": "low",
+      "inhaleExhaleRatio": 0.4,
+      "purpose": "support deeper restorative sleep",
+      "descEsp": "Para un sueño más profundo y reparador durante la noche — no para dormirte, sino para seguir dormido.",
+      "marketScope": {
+        "BR": "supportive-wellness",
+        "US": "general-wellness-low-risk",
+        "internal": "clinical-scope-design",
+        "EU": "wellness-softened"
+      },
+      "clinicalScope": "symptom-support",
+      "descEng": "For deeper, more restorative sleep through the night — not for falling asleep, but for staying there.",
+      "group": "Heal",
+      "descPrt": "Para um sono mais profundo e restaurador durante a noite — não para adormecer, mas para continuar dormindo.",
+      "provenance": {
+        "generatedAt": "2026-05-13T00:00:00Z",
+        "catalogVersion": "1.4.0-candidate",
+        "aestheticReviewedBy": [],
+        "scientificReferencesVersion": "0.1.7-candidate",
+        "soundscapeMapVersion": "0.1.11",
+        "notes": "Metadata updated to match the submitted Deep Sleep Restore voice design. Runtime-only ids, breathing expansion fields, and Sample soundscape voice are omitted from canonical voices. Symmetry layers are documented as slow texture and intentional 2.5 Hz bloom, not as 2.5 Hz isochronic target drivers.",
+        "scientificReviewedBy": [],
+        "generatedBy": "GPT-5.5T / R. Fabbri",
+        "designReferenceVersion": "4.12.0",
+        "clinicalSafetyReviewedBy": [],
+        "engineSpecVersion": "bsc-audio-engine-spec-0.1.0",
+        "reviewedBy": [
+          "R. Fabbri"
+        ],
+        "legalRegulatoryReviewedBy": []
+      },
+      "cautionTags": [
+        "nighttime-only",
+        "driving-unsafe"
+      ],
+      "purposeEsp": "favorecer un sueño más profundo y restaurador",
+      "med2": "Deep Sleep Restore",
+      "isShownIndex": 1,
+      "communionSchedule": false,
+      "evidenceNotes": "Sleep-support framing is informed by small binaural/sleep studies and broader acoustic-stimulation sleep literature; interventions are heterogeneous, so this remains sleep-support/wellness-oriented, not insomnia treatment.",
+      "targetBand": [
+        "high-delta"
+      ],
+      "requiredTier": "premium",
+      "med2prt": "Restauração do Sono Profundo",
+      "med2ita": "Sonno Profondo",
+      "evidenceTier": "moderate",
+      "engineCompatibility": {
+        "designMaxSymmetryRateHz": 50,
+        "engineMaxSymmetryRateHz": 50,
+        "breathingRuntimePolicyVersion": "bsc-breathing-runtime-0.1.0",
+        "minSymmetryNoteSepMs": 20,
+        "notes": "Pinned for v4.12.0 design validation; future engine changes do not automatically expand this preset design permission.",
+        "engineSpecVersion": "bsc-audio-engine-spec-0.1.0",
+        "symmetryTimingModel": "noteSep=1/pulseRateHz"
+      },
+      "breathingRegime": "sleep-induction",
+      "med2esp": "Sueño Profundo",
+      "creator": "fabbri-gpt5.4-content-refresh-v0.9.1",
+      "techDesc": "Primary target: 2.5 Hz high-delta. The direct target driver is a binaural layer at 201.25/203.75 Hz, generating a 2.5 Hz beat around a 202.5 Hz center. A standalone Martigli layer sweeps from 150 to 200 Hz and provides user-controlled breathing guidance. Two very slow Symmetry layers at 0.15625 Hz and 0.078125 Hz, using 150/250 Hz and 152.5/252.5 Hz slots, create a sparse, non-eventful texture and an intentional approximately 2.5 Hz cross-voice bloom around the 150/250 Hz anchors when the voices overlap. These Symmetry layers are aesthetic and psychoacoustic continuity/warmth devices; they are not presented as 2.5 Hz isochronic drivers or as added therapeutic claims. Auditory sleep evidence is limited but relevant, so the claim remains sleep-support and wellness-oriented. Not a treatment for insomnia or other sleep disorders.",
+      "purposePrt": "favorecer um sono mais profundo e restaurador",
+      "designReferenceVersion": "4.12.0",
+      "soundscapePolicy": {
+        "defaultMode": "very-low",
+        "compatibilityClass": "conditioned-low-default",
+        "maskingTolerance": "low",
+        "notes": "Very-low night-insect or night-air texture may be used as a runtime soundscape candidate for sleep semantics, but no Sample layer is stored inside voices. Clean Mode remains available; rendered overnight audit is required before any production default.",
+        "runtimeDefaultStatus": "candidate-default-requires-rendered-approval",
+        "maxGainDb": -24,
+        "defaultGainDb": -30,
+        "cleanModeAvailable": true,
+        "avoidTags": [
+          "rain-thunder",
+          "birds-busy",
+          "ocean-birds",
+          "fire-crackle",
+          "voice",
+          "urban",
+          "mammal-lowmid",
+          "obvious-loop"
+        ],
+        "recommendedTags": [
+          "night-air",
+          "rain-soft",
+          "water-distant",
+          "insects-night",
+          "instrument-tonal"
+        ],
+        "runtimeDefaultNotes": "The soundscape policy describes a candidate aesthetic runtime default. Production should preserve Clean Mode and enable the soundscape default only after preset-level rendered mix approval.",
+        "role": "aesthetic-world",
+        "productionDefaultMode": "clean-until-rendered-approval"
+      },
+      "usesEsp": [
+        "sueño profundo",
+        "sueño más profundo",
+        "sueño reparador",
+        "mejor calidad de sueño",
+        "seguir dormido",
+        "dormir toda la noche",
+        "me despierto por la noche",
+        "mantenimiento del sueño",
+        "recuperación nocturna",
+        "restauración del sueño",
+        "descanso nocturno",
+        "apoyo para dormir"
+      ],
+      "techDescEsp": "Objetivo principal: 2.5 Hz high-delta. El impulsor directo del objetivo es una capa binaural a 201.25/203.75 Hz, que genera un batido de 2.5 Hz alrededor de un centro de 202.5 Hz. Una capa Martigli independiente barre de 150 a 200 Hz y proporciona guía respiratoria controlada por el usuario. Dos capas Symmetry muy lentas a 0.15625 Hz y 0.078125 Hz, con ranuras 150/250 Hz y 152.5/252.5 Hz, crean una textura dispersa, no-eventual, y un bloom intencional de aproximadamente 2.5 Hz alrededor de los anclajes 150/250 Hz cuando las voces se superponen. Estas capas Symmetry son recursos estéticos y psicoacústicos de continuidad y calidez; no se presentan como impulsores isócronos a 2.5 Hz ni como nueva afirmación terapéutica. La evidencia auditiva sobre sueño es limitada pero relevante; por eso la afirmación queda como apoyo al sueño y bienestar. No es tratamiento para insomnio u otros trastornos del sueño.",
+      "descIta": "Per un sonno più profondo e ristoratore durante la notte — non per addormentarsi, ma per restare nel sonno.",
+      "bloomPolicy": "intentional-soft",
+      "purposeIta": "favorire un sonno più profondo e restaurativo",
+      "publicClaimLevel": "relief-support",
+      "evidenceBasis": "direct_auditory_sleep",
+      "hasBreathGuide": true,
+      "launchStatus": "core",
+      "sessionStyle": "background",
+      "intervalClaimLevel": "aesthetic_only",
+      "headphonesMode": "speaker-safe",
+      "voiceTypes": [
+        "Binaural",
+        "Martigli",
+        "Symmetry"
+      ],
+      "mixProfile": {
+        "mixAuditRequired": true,
+        "loudnessClass": "sensitive",
+        "notes": "Sensitive sleep-support context; preserve low loudness, avoid foreground motion, and confirm that the 2.5 Hz binaural beat, Martigli breathing contour, and slow Symmetry bloom remain non-intrusive.",
+        "densityClass": "minimal",
+        "cueSaliencePriority": "critical",
+        "auditScope": [
+          "clean",
+          "default-soundscape",
+          "max-soundscape",
+          "headphones"
+        ]
+      },
+      "usesPrt": [
+        "sono profundo",
+        "sono mais profundo",
+        "sono restaurador",
+        "melhor qualidade de sono",
+        "continuar dormindo",
+        "dormir a noite toda",
+        "acordo de noite",
+        "manutenção do sono",
+        "recuperação noturna",
+        "restauração do sono",
+        "descanso noturno",
+        "suporte para sono"
+      ],
+      "med2eng": "Deep Sleep Restore",
+      "description": "For deeper, more restorative sleep through the night — not for falling asleep, but for staying there.",
+      "version": "1.4.0",
+      "updatedAt": "2026-05-20T16:07:07.562Z",
+      "usesIta": [
+        "sonno profondo",
+        "sonno più profondo",
+        "sonno ristoratore",
+        "sonno di qualità",
+        "restare addormentato",
+        "dormire tutta la notte",
+        "mi sveglio di notte",
+        "mantenere il sonno",
+        "recupero notturno",
+        "ripristino del sonno",
+        "riposo notturno",
+        "supporto per il sonno"
+      ],
+      "isCreatedByAI": true,
+      "d": 900,
+      "intentionalBloomRationale": "The slow Symmetry layers at 150/250 Hz and 152.5/252.5 Hz intentionally create soft approximately 2.5 Hz cross-voice beating around the 150/250 Hz anchors when overlapping. This is documented as aesthetic/psychoacoustic bloom only and does not change the primary 2.5 Hz high-delta target or evidence basis.",
+      "techDescPrt": "Alvo principal: 2.5 Hz high-delta. O driver direto do alvo é uma camada binaural em 201.25/203.75 Hz, que gera um batimento de 2.5 Hz ao redor de um centro de 202.5 Hz. Uma camada Martigli independente varre de 150 a 200 Hz e fornece guia respiratória controlada pelo usuário. Duas camadas Symmetry muito lentas em 0.15625 Hz e 0.078125 Hz, com slots 150/250 Hz e 152.5/252.5 Hz, criam uma textura esparsa, não-eventual, e um bloom intencional de aproximadamente 2.5 Hz ao redor dos ancoramentos 150/250 Hz quando as vozes se sobrepõem. Essas camadas Symmetry são recursos estéticos e psicoacústicos de continuidade e calor; não são apresentadas como drivers isócronos de 2.5 Hz nem como nova alegação terapêutica. A evidência auditiva sobre sono é limitada, mas relevante; por isso a alegação permanece como suporte ao sono e bem-estar. Não é tratamento para insônia ou outros distúrbios do sono.",
+      "techDescIta": "Target principale: 2.5 Hz high-delta. Il driver diretto del target è uno strato binaurale a 201.25/203.75 Hz, che genera un battimento di 2.5 Hz intorno a un centro di 202.5 Hz. Uno strato Martigli indipendente scorre da 150 a 200 Hz e fornisce guida respiratoria controllata dall’utente. Due strati Symmetry molto lenti a 0.15625 Hz e 0.078125 Hz, con slot 150/250 Hz e 152.5/252.5 Hz, creano una trama rada, non-eventuale e un bloom intenzionale di circa 2.5 Hz intorno agli ancoraggi 150/250 Hz quando le voci si sovrappongono. Questi strati Symmetry sono dispositivi estetici e psicoacustici di continuità e calore; non sono presentati come driver isocroni a 2.5 Hz né come nuova rivendicazione terapeutica. L’evidenza uditiva sul sonno è limitata ma rilevante, quindi la rivendicazione resta orientata al supporto del sonno e al benessere. Non è un trattamento per insonnia o altri disturbi del sonno.",
+      "evidenceRefs": [
+        "ABELN_2014",
+        "JIRAKITTAYAKORN_2018",
+        "WANG_2025_ACOUSTIC_INSOMNIA",
+        "KANZLER_2023",
+        "BAE_2021"
+      ],
+      "uses": [
+        "deep sleep",
+        "deeper sleep",
+        "restorative sleep",
+        "better sleep quality",
+        "stay asleep",
+        "sleep through the night",
+        "wake up at night",
+        "sleep maintenance",
+        "night recovery",
+        "sleep restoration",
+        "nighttime rest",
+        "sleep support"
+      ],
+      "noisePolicy": {
+        "userControllable": true,
+        "cleanModeAvailable": true,
+        "notes": "Optional user-controlled synthetic noise only; default off until rendered cue-salience review approves a default.",
+        "enabledByDefault": false,
+        "maxGainDb": -30,
+        "defaultGainDb": null,
+        "allowedColors": [
+          "pink",
+          "brown"
+        ],
+        "defaultColor": "pink",
+        "maskingTolerance": "very-low",
+        "available": true,
+        "role": "sleep-masking"
+      },
+      "aestheticIntent": "Low, dark, sparse, and sleep-maintaining; the 2.5 Hz binaural beat provides the high-delta target while the 150–200 Hz Martigli contour and very slow 150/250–152.5/252.5 Hz Symmetry bloom create a quiet nocturnal field. The bloom should feel like soft continuity, not foreground motion.",
+      "advancedUser": false,
+      "techDescEng": "Primary target: 2.5 Hz high-delta. The direct target driver is a binaural layer at 201.25/203.75 Hz, generating a 2.5 Hz beat around a 202.5 Hz center. A standalone Martigli layer sweeps from 150 to 200 Hz and provides user-controlled breathing guidance. Two very slow Symmetry layers at 0.15625 Hz and 0.078125 Hz, using 150/250 Hz and 152.5/252.5 Hz slots, create a sparse, non-eventful texture and an intentional approximately 2.5 Hz cross-voice bloom around the 150/250 Hz anchors when the voices overlap. These Symmetry layers are aesthetic and psychoacoustic continuity/warmth devices; they are not presented as 2.5 Hz isochronic drivers or as added therapeutic claims. Auditory sleep evidence is limited but relevant, so the claim remains sleep-support and wellness-oriented. Not a treatment for insomnia or other sleep disorders.",
+      "aestheticProfile": {
+        "register": "sedative",
+        "density": "minimal",
+        "intervalGrammar": [
+          "perfect-fourth",
+          "major-sixth"
+        ],
+        "symmetryPacing": "long-form",
+        "bloomRole": "subtle",
+        "poeticFit": "deep-sleep-restore"
+      }
+    }
+  }
+]

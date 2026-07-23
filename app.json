@@ -8,18 +8,22 @@
     "scheme": "quietalarm",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "bundleIdentifier": "com.richinevan.quiet-alarm",
+      "bundleIdentifier": "com.quietalarm.app",
+      "supportsTablet": true,
       "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        },
         "UIBackgroundModes": [
-          "audio",
           "audio"
         ],
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSMicrophoneUsageDescription": "Quiet Alarm does not record audio. This permission is only required by an audio library dependency and is never used."
       }
     },
     "android": {
       "predictiveBackGestureEnabled": false,
-      "package": "com.richinevan.quietalarm"
+      "package": "com.quietalarm.app"
     },
     "web": {
       "output": "static",
@@ -31,7 +35,7 @@
         "expo-splash-screen",
         {
           "backgroundColor": "#0a0906",
-          "image": "./assets/images/icon.png",
+          "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
       ],

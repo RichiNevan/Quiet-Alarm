@@ -1,0 +1,306 @@
+[
+  {
+    "_id": "Perform - Memory Retention",
+    "header": {
+      "descEsp": "Ideal después de estudiar o de trabajo mental intenso, cuando quieres que lo aprendido se asiente y siga accesible.",
+      "evidenceBasis": "direct_auditory_cognition_plus_breathwork",
+      "engineCompatibility": {
+        "notes": "Pinned for v4.12.0 design validation. This preset uses one Binaural 6 Hz target layer, one low-volume Martigli breathing-support layer, one explicit 6 Hz Symmetry target, and one very slow aesthetic/memory-trace Symmetry line.",
+        "engineMaxSymmetryRateHz": 50,
+        "engineSpecVersion": "bsc-audio-engine-spec-0.1.0",
+        "minSymmetryNoteSepMs": 20,
+        "symmetryTimingModel": "noteSep=1/pulseRateHz",
+        "designMaxSymmetryRateHz": 50,
+        "breathingRuntimePolicyVersion": "bsc-breathing-runtime-0.1.0"
+      },
+      "med2": "Memory Retention",
+      "inhaleExhaleRatio": 0.5,
+      "bloomPolicy": "intentional-soft",
+      "secondaryTargetHzs": [],
+      "voiceTypes": [
+        "Binaural",
+        "Martigli",
+        "Symmetry"
+      ],
+      "aestheticIntent": "Post-learning settling, not sleep descent; the 6 Hz low-theta frame, subtle breathing cue, warm 4:5:6 harmonic body, and slow near-anchor bloom should feel like a quiet memory trace becoming stable without turning into heavy relaxation.",
+      "evidenceNotes": "Memory-retention support is adjacent, protocol-sensitive, and not established as a reliable effect. The 6 Hz low-theta component is framed as post-learning settling and memory-trace support, not as proven memory enhancement. Breathing support is included as a low-salience settling cue. Wellness/performance support only; do not claim reliable retention improvement, cognitive treatment, exam-performance benefit, or clinical efficacy.",
+      "techDescIta": "Target principale: 6 Hz low-theta. Uno strato Binaural centrato su 289 Hz porta un battimento a 6 Hz, con portanti in cuffia circa 286/292 Hz. Uno strato Martigli indipendente scorre da 186.666666 a 280 Hz come supporto respiratorio scalato dall'utente a basso volume, offrendo assestamento post-compito senza rendere dominante il contorno respiratorio. Un driver Symmetry esplicito a 6.0006 Hz su 233.33333 Hz si colloca dentro una cornice armonica calda 4:5:6 con il range Martigli: 186.666666 Hz, 233.33333 Hz e 280 Hz. Una linea Symmetry molto lenta a 0.046875 Hz attraversa 230.3333, 188.16666666, 280.75 e 315 Hz. I primi tre toni rispecchiano morbidamente gli stessi ancoraggi 4:5:6, mentre 315 Hz aggiunge un piccolo colore superiore 9:8 sopra 280 Hz. Questi piccoli scarti vicino agli ancoraggi creano bloom morbido intenzionale e colore di traccia mnemonica senza aggiungere target secondari di entrainment. Non viene usato panning. Questo preset è pensato per assestamento post-studio o post-apprendimento, non per miglioramento garantito della memoria, trattamento cognitivo, trattamento ADHD, miglioramento delle prestazioni d'esame o cura medica.",
+      "breathingRegime": "gentle-introduction",
+      "cautionTags": [
+        "post-task-use",
+        "drowsiness-sensitive",
+        "memory-support",
+        "learning-support",
+        "not-memory-improvement-claim",
+        "not-cognitive-treatment",
+        "not-adhd-treatment",
+        "not-productivity-guarantee",
+        "not-standalone-care"
+      ],
+      "uses": [
+        "memory retention",
+        "study retention",
+        "after study",
+        "after learning",
+        "lock in learning",
+        "memory consolidation",
+        "retain information",
+        "remember what I studied",
+        "review after studying",
+        "memory support",
+        "recall support",
+        "memory boost"
+      ],
+      "descPrt": "Ideal depois de estudar ou de trabalho mental intenso, quando você quer que o que aprendeu se assente e continue acessível.",
+      "description": "Best used after studying or mentally dense work, when you want what you learned to settle and remain accessible.",
+      "advancedUser": false,
+      "updatedAt": "2026-05-24T13:11:28.577Z",
+      "purposeEsp": "apoyar asentamiento posterior al aprendizaje y continuidad de la huella de memoria",
+      "clinicalScope": "wellness",
+      "publicClaimLevel": "wellness-support",
+      "isShownIndex": 18,
+      "safetyEvidenceBasis": {
+        "notes": "Safety/scope boundaries constrain copy; not efficacy support. Avoid clinical memory, cognitive-disorder, ADHD, dementia, exam-performance, educational-performance, professional-performance, or guaranteed-retention claims.",
+        "role": "scope-limiting",
+        "refs": []
+      },
+      "requiredTier": "premium",
+      "mixProfile": {
+        "mixAuditRequired": true,
+        "cueSaliencePriority": "high",
+        "auditScope": [
+          "clean",
+          "default-soundscape",
+          "max-soundscape",
+          "headphones",
+          "speaker"
+        ],
+        "loudnessClass": "standard",
+        "notes": "Post-learning Perform context; verify that the 6 Hz target supports settling without becoming too sleepy, that the 289 Hz binaural layer is comfortable, that the 233.33333 Hz Symmetry driver remains clear but not pulse-heavy, that the low-volume Martigli cue is present without dominating, and that the 230.3333/188.16666666/280.75/315 Hz slow line remains subtle memory-trace color rather than foreground melody.",
+        "densityClass": "clean"
+      },
+      "d": 900,
+      "med2prt": "Retenção de Memória",
+      "usesPrt": [
+        "retenção da memória",
+        "retenção de estudo",
+        "depois de estudar",
+        "depois de aprender",
+        "fixar o aprendizado",
+        "consolidação da memória",
+        "reter informação",
+        "lembrar o que estudei",
+        "revisar depois de estudar",
+        "suporte à memória",
+        "suporte para lembrar",
+        "impulso para memória"
+      ],
+      "noisePolicy": {
+        "role": "off-by-default",
+        "defaultColor": null,
+        "available": false,
+        "enabledByDefault": false,
+        "userControllable": true,
+        "maskingTolerance": "very-low",
+        "allowedColors": [],
+        "cleanModeAvailable": true,
+        "maxGainDb": null,
+        "notes": "No preset-level synthetic-noise recommendation. User/global controls may remain available by product policy, but no noise should be enabled by default for this memory-retention preset.",
+        "defaultGainDb": null
+      },
+      "designReferenceVersion": "4.12.0",
+      "usesIta": [
+        "ritenzione della memoria",
+        "memoria dopo lo studio",
+        "dopo lo studio",
+        "dopo aver imparato",
+        "fissare quello che ho studiato",
+        "consolidamento della memoria",
+        "trattenere informazioni",
+        "ricordare quello che ho studiato",
+        "ripasso dopo lo studio",
+        "supporto per la memoria",
+        "supporto al richiamo",
+        "boost memoria"
+      ],
+      "purposeIta": "sostenere assestamento post-apprendimento e continuità della traccia mnemonica",
+      "hasBreathGuide": true,
+      "purpose": "support post-learning settling and memory-trace continuity",
+      "intervalClaimLevel": "aesthetic_only",
+      "communionSchedule": false,
+      "launchStatus": "advanced",
+      "evidenceRefs": [
+        "BASU_BANERJEE_2023",
+        "GARCIA_ARGIBAY_2019",
+        "ELNAZER_2026",
+        "JIRAKITTAYAKORN_2018",
+        "ZACCARO_2018",
+        "LABORDE_2022"
+      ],
+      "targetBand": [
+        "low-theta"
+      ],
+      "techDesc": "Primary target: 6 Hz low-theta. A Binaural layer centered at 289 Hz carries a 6 Hz beat, producing approximate 286/292 Hz headphone carriers. A standalone Martigli layer sweeps from 186.666666 to 280 Hz as user-scaled breathing support at low volume, providing post-task settling without making the breath contour dominant. An explicit 6.0006 Hz Symmetry driver at 233.33333 Hz sits inside a warm 4:5:6 harmonic frame with the Martigli range: 186.666666 Hz, 233.33333 Hz, and 280 Hz. A very slow Symmetry line at 0.046875 Hz moves through 230.3333, 188.16666666, 280.75, and 315 Hz. The first three tones softly shadow the same 4:5:6 anchors, while 315 Hz adds a small upper 9:8 color above 280 Hz. These near-anchor offsets create intentional soft bloom and memory-trace color without adding secondary entrainment targets. No panning is used. This preset is intended for post-study or post-learning settling, not guaranteed memory improvement, cognitive treatment, ADHD treatment, exam-performance enhancement, or medical care.",
+      "aestheticProfile": {
+        "symmetryPacing": "theta-target-plus-very-slow-memory-trace-line",
+        "intervalGrammar": [
+          "low-theta-unison",
+          "post-learning-theta",
+          "subtle-breathing-anchor",
+          "4-5-6-harmonic-frame",
+          "major-third-color",
+          "minor-third-color",
+          "perfect-fifth",
+          "soft-9-8-upper-color",
+          "near-anchor-bloom",
+          "memory-trace-color"
+        ],
+        "poeticFit": "memory-trace",
+        "register": "warm-golden-settling",
+        "bloomRole": "subtle",
+        "density": "clean"
+      },
+      "descIta": "Ideale dopo lo studio o un lavoro mentalmente denso, quando vuoi che ciò che hai imparato si assesti e resti accessibile.",
+      "isCreatedByAI": true,
+      "headphonesMode": "recommended",
+      "soundscapePolicy": {
+        "processingRecommendation": {
+          "notchDepthDb": -6,
+          "carrierAwareEq": "recommended-before-default-upgrade",
+          "status": "future-runtime-experiment"
+        },
+        "role": "ecological-glue",
+        "defaultGainDb": -30,
+        "maxGainDb": -24,
+        "productionDefaultMode": "clean-until-rendered-approval",
+        "recommendedTags": [
+          "room-tone",
+          "night-air",
+          "water-distant",
+          "instrument-tonal",
+          "wind-soft",
+          "rain-soft",
+          "insects-night"
+        ],
+        "runtimeDefaultStatus": "candidate-default-requires-rendered-approval",
+        "compatibilityClass": "conditioned-low-default",
+        "defaultMode": "very-low",
+        "avoidTags": [
+          "voice",
+          "urban",
+          "birds-busy",
+          "fire-crackle",
+          "rain-thunder",
+          "obvious-loop",
+          "wind-gusts",
+          "mammal-lowmid"
+        ],
+        "notes": "Very-low ambience may support post-learning settling, but Clean Mode remains the production-safe baseline until rendered approval. Avoid voices, semantic content, busy birds, crackle, thunder, obvious loops, urban noise, gusty wind, or anything that distracts from quiet review and settling.",
+        "cleanModeAvailable": true,
+        "maskingTolerance": "low",
+        "runtimeDefaultNotes": "The soundscape policy describes a candidate very-low aesthetic default. Production runtime should preserve Clean Mode and enable the soundscape default only after preset-level rendered mix approval confirms low distraction and no excess drowsiness."
+      },
+      "med2ita": "Ritenzione della Memoria",
+      "version": "1.4.0",
+      "med2eng": "Memory Retention",
+      "group": "Perform",
+      "sessionStyle": "active",
+      "techDescPrt": "Alvo principal: 6 Hz low-theta. Uma camada Binaural centrada em 289 Hz carrega um batimento de 6 Hz, produzindo portadoras aproximadas de 286/292 Hz em fones. Uma camada Martigli independente varre de 186.666666 a 280 Hz como suporte respiratório escalado pelo usuário em baixo volume, fornecendo acomodação pós-tarefa sem tornar o contorno respiratório dominante. Um driver Symmetry explícito de 6.0006 Hz em 233.33333 Hz fica dentro de uma moldura harmônica quente 4:5:6 com a faixa Martigli: 186.666666 Hz, 233.33333 Hz e 280 Hz. Uma linha Symmetry muito lenta em 0.046875 Hz passa por 230.3333, 188.16666666, 280.75 e 315 Hz. Os três primeiros tons refletem suavemente os mesmos ancoramentos 4:5:6, enquanto 315 Hz acrescenta uma pequena cor superior 9:8 acima de 280 Hz. Esses pequenos deslocamentos próximos aos ancoramentos criam bloom suave intencional e cor de traço de memória sem adicionar alvos secundários de entrainment. Nenhum panning é usado. Este preset é pensado para acomodação pós-estudo ou pós-aprendizado, não para melhora garantida da memória, tratamento cognitivo, tratamento de TDAH, melhora de desempenho em provas ou cuidado médico.",
+      "evidenceTier": "emerging",
+      "provenance": {
+        "generatedBy": "GPT-5.5T / R. Fabbri",
+        "designReferenceVersion": "4.12.0",
+        "scientificReviewedBy": [],
+        "scientificReferencesVersion": "0.1.7-candidate",
+        "soundscapeMapVersion": "0.1.11",
+        "clinicalSafetyReviewedBy": [],
+        "aestheticReviewedBy": [],
+        "engineSpecVersion": "bsc-audio-engine-spec-0.1.0",
+        "reviewedBy": [
+          "R. Fabbri"
+        ],
+        "generatedAt": "2026-05-24T13:11:28.577Z",
+        "notes": "Metadata updated to match the submitted Memory Retention voice design. Voice/audio parameters unchanged. The preset is documented as 6 Hz post-learning theta with a subtle Martigli breathing cue, 4:5:6 harmonic memory-trace frame, and slow near-anchor bloom. The wording intentionally avoids guaranteed memory-improvement claims.",
+        "catalogVersion": "1.4.0-candidate",
+        "legalRegulatoryReviewedBy": []
+      },
+      "techDescEsp": "Objetivo principal: 6 Hz low-theta. Una capa Binaural centrada en 289 Hz lleva un batido de 6 Hz, produciendo portadoras aproximadas de 286/292 Hz en auriculares. Una capa Martigli independiente barre de 186.666666 a 280 Hz como apoyo respiratorio escalado por el usuario a bajo volumen, proporcionando asentamiento posterior a la tarea sin hacer dominante el contorno respiratorio. Un driver Symmetry explícito de 6.0006 Hz en 233.33333 Hz se sitúa dentro de un marco armónico cálido 4:5:6 con el rango Martigli: 186.666666 Hz, 233.33333 Hz y 280 Hz. Una línea Symmetry muy lenta a 0.046875 Hz se mueve por 230.3333, 188.16666666, 280.75 y 315 Hz. Los tres primeros tonos reflejan suavemente los mismos anclajes 4:5:6, mientras 315 Hz añade un pequeño color superior 9:8 sobre 280 Hz. Estos pequeños desplazamientos cerca de los anclajes crean bloom suave intencional y color de huella de memoria sin añadir objetivos secundarios de entrainment. No se usa paneo. Este preset está pensado para asentamiento posterior al estudio o al aprendizaje, no para mejora garantizada de memoria, tratamiento cognitivo, tratamiento de TDAH, mejora de rendimiento en exámenes ni atención médica.",
+      "marketScope": {
+        "BR": "supportive-wellness",
+        "internal": "wellness-design",
+        "EU": "general-wellness",
+        "US": "general-wellness-low-risk"
+      },
+      "creator": "fabbri-gpt5.4-content-refresh-v0.9.1",
+      "createdAt": "2026-04-02T07:07:18.942Z",
+      "primaryTargetHz": 6,
+      "usesEsp": [
+        "retención de memoria",
+        "retención de estudio",
+        "después de estudiar",
+        "después de aprender",
+        "fijar el aprendizaje",
+        "consolidación de la memoria",
+        "retener información",
+        "recordar lo que estudié",
+        "repasar después de estudiar",
+        "apoyo a la memoria",
+        "apoyo para recordar",
+        "impulso para la memoria"
+      ],
+      "descEng": "Best used after studying or mentally dense work, when you want what you learned to settle and remain accessible.",
+      "intensityTier": "low",
+      "med2esp": "Retención de Memoria",
+      "purposePrt": "apoiar acomodação pós-aprendizado e continuidade do traço de memória"
+    },
+    "voices": [
+      {
+        "beat": 6,
+        "panOsc": 0,
+        "iniVolume": 0.16,
+        "centerHz": 289,
+        "type": "Binaural"
+      },
+      {
+        "pulseRateHz": 6.0006,
+        "noteSlots": [
+          {
+            "hz": [
+              233.33333
+            ]
+          }
+        ],
+        "type": "Symmetry",
+        "iniVolume": 0.125
+      },
+      {
+        "noteSlots": [
+          {
+            "hz": [
+              230.3333
+            ]
+          },
+          {
+            "hz": [
+              188.16666666
+            ]
+          },
+          {
+            "hz": [
+              280.75
+            ]
+          },
+          {
+            "hz": [
+              315
+            ]
+          }
+        ],
+        "pulseRateHz": 0.046875,
+        "permfunc": 1,
+        "type": "Symmetry",
+        "iniVolume": 0.06
+      }
+    ]
+  }
+]

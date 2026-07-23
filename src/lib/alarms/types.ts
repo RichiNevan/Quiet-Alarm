@@ -1,4 +1,9 @@
-export type PresetId = "morningActivation" | "lucidDreaming";
+export type PresetId =
+  | "morningActivation"
+  | "lucidDreaming"
+  | "deepSleep"
+  | "memoryRetention"
+  | "fallAsleep";
 
 // 0 = Sunday .. 6 = Saturday (JS Date#getDay convention). Empty array means
 // "ring once, then disable" — the default for a freshly created alarm.

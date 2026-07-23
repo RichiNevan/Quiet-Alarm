@@ -12,6 +12,7 @@ import {
   Text,
   View,
 } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { DurationPickerSheet } from "../components/alarms/DurationPickerSheet";
 import { PresetPickerSheet } from "../components/alarms/PresetPickerSheet";
@@ -19,6 +20,7 @@ import { WeekdayPicker } from "../components/alarms/WeekdayPicker";
 import { getPreset } from "../lib/alarms/presets";
 import { DEFAULT_DURATION_SECONDS, formatDuration } from "../lib/alarms/timing";
 import { useAlarms } from "../lib/alarms/useAlarms";
+import { usePresetPreview } from "../lib/alarms/usePresetPreview";
 import { colors } from "../theme/colors";
 
 function defaultTime(): { hour: number; minute: number } {
@@ -29,6 +31,7 @@ function defaultTime(): { hour: number; minute: number } {
 
 export default function AlarmEditScreen() {
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   const { id } = useLocalSearchParams<{ id?: string }>();
   const { alarms, addAlarm, updateAlarm, removeAlarm } = useAlarms();
 
@@ -45,6 +48,8 @@ export default function AlarmEditScreen() {
   const [repeatDays, setRepeatDays] = useState<number[]>(existing?.repeatDays ?? []);
   const [pickerOpen, setPickerOpen] = useState(false);
   const [durationPickerOpen, setDurationPickerOpen] = useState(false);
+  const { previewingId, togglePreview, stopPreview } = usePresetPreview();
+  const isPreviewing = previewingId === presetId;
 
   const pickerDate = useMemo(() => {
     const d = new Date();
@@ -89,7 +94,7 @@ export default function AlarmEditScreen() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.topBar}>
+      <View style={[styles.topBar, { paddingTop: insets.top + 16 }]}>
         <Pressable onPress={() => router.back()}>
           <Text style={styles.topBarAction}>Cancel</Text>
         </Pressable>
@@ -99,7 +104,9 @@ export default function AlarmEditScreen() {
         </Pressable>
       </View>
 
-      <ScrollView contentContainerStyle={styles.content}>
+      <ScrollView
+        contentContainerStyle={[styles.content, { paddingBottom: 20 + insets.bottom }]}
+      >
         <View style={styles.pickerWrap}>
           <DateTimePicker
             value={pickerDate}
@@ -117,10 +124,21 @@ export default function AlarmEditScreen() {
 
         <View style={styles.section}>
           <Text style={styles.sectionLabel}>Sound</Text>
-          <Pressable style={styles.row} onPress={() => setPickerOpen(true)}>
-            <Text style={styles.rowValue}>{getPreset(presetId).label}</Text>
-            <Text style={styles.chevron}>›</Text>
-          </Pressable>
+          <View style={styles.row}>
+            <Pressable style={styles.rowMain} onPress={() => setPickerOpen(true)}>
+              <Text style={styles.rowValue}>{getPreset(presetId).label}</Text>
+              <Text style={styles.chevron}>›</Text>
+            </Pressable>
+            <Pressable
+              style={styles.previewButton}
+              onPress={() => togglePreview(presetId)}
+              accessibilityRole="button"
+              accessibilityLabel={isPreviewing ? "Stop preview" : "Preview sound"}
+              hitSlop={8}
+            >
+              <Text style={styles.previewButtonText}>{isPreviewing ? "■" : "▶"}</Text>
+            </Pressable>
+          </View>
         </View>
 
         <View style={styles.section}>
@@ -141,7 +159,10 @@ export default function AlarmEditScreen() {
       <PresetPickerSheet
         visible={pickerOpen}
         selectedId={presetId}
-        onSelect={setPresetId}
+        onSelect={(id) => {
+          stopPreview();
+          setPresetId(id);
+        }}
         onClose={() => setPickerOpen(false)}
       />
 
@@ -161,7 +182,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    paddingTop: 60,
     paddingHorizontal: 20,
     paddingBottom: 16,
     borderBottomWidth: StyleSheet.hairlineWidth,
@@ -191,8 +211,26 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.border,
   },
+  rowMain: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
   rowValue: { color: colors.textPrimary, fontSize: 16 },
   chevron: { color: colors.textMuted, fontSize: 18 },
+  previewButton: {
+    marginLeft: 14,
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: colors.surfaceRaised,
+    borderWidth: 1,
+    borderColor: colors.border,
+  },
+  previewButtonText: { color: colors.amber, fontSize: 13 },
   deleteRow: { alignItems: "center", paddingVertical: 16 },
   deleteText: { color: colors.danger, fontSize: 16, fontWeight: "600" },
 });

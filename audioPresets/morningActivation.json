@@ -3,21 +3,9 @@
     "_id": "Perform - Morning Ignition",
     "voices": [
       {
-        "type": "Martigli-Binaural",
-        "panOscPeriod": 160,
-        "lowHz": 277.5,
-        "panOsc": 2,
-        "isOn": true,
-        "iniVolume": 0.05623413251903491,
-        "highHz": 370,
-        "beat": 15
-      },
-      {
         "noteSlots": [
           {
-            "hz": [
-              231.25
-            ]
+            "hz": [231.25]
           }
         ],
         "pulseRateHz": 15,
@@ -27,26 +15,16 @@
       {
         "noteSlots": [
           {
-            "hz": [
-              185
-            ]
+            "hz": [185]
           },
           {
-            "hz": [
-              185,
-              233.125
-            ]
+            "hz": [185, 233.125]
           },
           {
-            "hz": [
-              185,
-              362.5
-            ]
+            "hz": [185, 362.5]
           },
           {
-            "hz": [
-              270
-            ]
+            "hz": [270]
           }
         ],
         "iniVolume": 0.08,
@@ -65,26 +43,16 @@
         "iniVolume": 0.10592537251772889,
         "noteSlots": [
           {
-            "hz": [
-              233.125,
-              370
-            ]
+            "hz": [233.125, 370]
           },
           {
-            "hz": [
-              362.5,
-              370
-            ]
+            "hz": [362.5, 370]
           },
           {
-            "hz": [
-              370
-            ]
+            "hz": [370]
           },
           {
-            "hz": [
-              190
-            ]
+            "hz": [190]
           }
         ],
         "permfunc": 4,
@@ -134,10 +102,7 @@
       "med2eng": "Morning Ignition",
       "descEsp": "Para mañanas, arranques lentos y el calentamiento previo al trabajo cuando necesitas encenderte.",
       "bloomPolicy": "intentional-strong",
-      "voiceTypes": [
-        "Martigli-Binaural",
-        "Symmetry"
-      ],
+      "voiceTypes": ["Martigli-Binaural", "Symmetry"],
       "headphonesMode": "recommended",
       "intervalClaimLevel": "aesthetic_only",
       "descPrt": "Para manhãs, partidas lentas e o aquecimento pré-trabalho quando você precisa ligar.",
@@ -191,10 +156,7 @@
         "slow start",
         "get moving"
       ],
-      "secondaryTargetHzs": [
-        7.5,
-        3.75
-      ],
+      "secondaryTargetHzs": [7.5, 3.75],
       "techDescPrt": "Alvo principal: 15 Hz low-beta. Uma camada Martigli-Binaural de baixo volume carrega um batimento de 15 Hz enquanto varre de 277.5 a 370 Hz com movimento respiratório escalado pelo usuário e panning sinusoidal válido: panOsc 2 com período de 160 s e sem campo panOscTrans. Isso cria um contorno de ativação esquerda-direita lento e suave, sem crossfades abruptos. Um driver Symmetry forte de 15 Hz em 231.25 Hz fornece a principal âncora de ignição. Camadas Symmetry adicionais em 7.5 Hz e 3.75 Hz atuam como andaimes sub-harmônicos de ignição em base dois: 7.5 Hz é metade da taxa primária de 15 Hz, e 3.75 Hz é um quarto dela. Essas camadas sub-harmônicas fazem parte da textura rítmica de rampa e não são alvos terapêuticos separados. A moldura harmônica se centra em 185, 231.25, 277.5 e 370 Hz, formando uma gramática de ativação aproximada 4:5:6:8. O driver em 231.25 Hz dá a cor maior da parte 5, a varredura Martigli-Binaural cobre a região superior de ativação 277.5/370, e as camadas Symmetry de 7.5/3.75 Hz reutilizam 185, 190, 233.125, 270, 362.5 e 370 Hz como cores de ignição e bloom próximo aos ancoramentos. O resultado é um desenho de ignição matinal multiescala: claro, rítmico, em camadas e direcionado para frente. É pensado para rampa matinal e ativação pré-trabalho, não para tratamento de fadiga, substituição de sono, correção circadiana, eficácia semelhante a estimulante ou produtividade garantida.",
       "evidenceNotes": "Morning activation and clarity support is indirect and protocol-sensitive, based on auditory cognition/arousal literature plus breathing-support context. The 15 Hz low-beta component is framed as morning activation support, while 7.5 Hz and 3.75 Hz are base-two subharmonic ignition scaffolds rather than independent therapeutic targets. Wellness/performance support only; do not claim reliable energy improvement, fatigue treatment, sleep replacement, productivity enhancement, or clinical efficacy.",
       "d": 900,
@@ -299,9 +261,7 @@
         "clinicalSafetyReviewedBy": [],
         "notes": "Metadata updated to match the submitted Morning Ignition voice design. Voice/audio parameters unchanged. The preset is documented as a multi-scale 15 / 7.5 / 3.75 Hz morning ignition design with a 4:5:6:8 harmonic frame and valid panOsc 2 sinusoidal panning on the Martigli-Binaural voice.",
         "aestheticReviewedBy": [],
-        "reviewedBy": [
-          "R. Fabbri"
-        ],
+        "reviewedBy": ["R. Fabbri"],
         "engineSpecVersion": "bsc-audio-engine-spec-0.1.0",
         "soundscapeMapVersion": "0.1.11",
         "scientificReferencesVersion": "0.1.7-candidate",

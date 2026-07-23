@@ -1,4 +1,5 @@
 import { ensureCustomNodesInstalled } from "@biosyncare/audio-engine";
+import { BottomSheetModalProvider } from "@gorhom/bottom-sheet";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
@@ -25,16 +26,18 @@ export default function RootLayout() {
     // (TimeWheelPicker's Pan) to receive touches at all — without this the
     // wheel renders but silently never responds to drags.
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <View style={{ flex: 1, backgroundColor: colors.background }}>
-        <StatusBar style="light" />
-        <Stack
-          screenOptions={{
-            headerShown: false,
-            contentStyle: { backgroundColor: colors.background },
-            animation: "slide_from_bottom",
-          }}
-        />
-      </View>
+      <BottomSheetModalProvider>
+        <View style={{ flex: 1, backgroundColor: colors.background }}>
+          <StatusBar style="light" />
+          <Stack
+            screenOptions={{
+              headerShown: false,
+              contentStyle: { backgroundColor: colors.background },
+              animation: "slide_from_bottom",
+            }}
+          />
+        </View>
+      </BottomSheetModalProvider>
     </GestureHandlerRootView>
   );
 }
