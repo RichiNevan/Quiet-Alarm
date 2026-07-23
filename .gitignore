@@ -1,43 +1,113 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# ---------------------------------------------------------------------------
+# Dependencies
+# ---------------------------------------------------------------------------
 node_modules/
+.pnp
+.pnp.js
+.yarn/cache/
+.yarn/install-state.gz
 
+# ---------------------------------------------------------------------------
 # Expo
+# ---------------------------------------------------------------------------
 .expo/
 dist/
 web-build/
 expo-env.d.ts
+.metro-health-check*
 
-# Native
+# ---------------------------------------------------------------------------
+# Generated native projects (CNG)
+# Recreated by `npx expo prebuild` — see the Makefile prepare* targets.
+# Native source belongs in modules/ or audio-engine/, plist keys in app.json.
+# ---------------------------------------------------------------------------
+/ios/
+/android/
+
+# ---------------------------------------------------------------------------
+# Native build output (local modules: modules/*, audio-engine/*)
+# ---------------------------------------------------------------------------
+build/
+.cxx/
+.gradle/
 .kotlin/
-*.orig.*
+local.properties
+*.iml
+captures/
+.externalNativeBuild/
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.derived-debug/
+*.hmap
+*.dSYM
+*.dSYM.zip
+
+# CocoaPods
+Pods/
+
+# ---------------------------------------------------------------------------
+# Build artifacts (EAS local builds drop these in the repo root)
+# ---------------------------------------------------------------------------
+*.ipa
+*.aab
+*.apk
+*.aar
+*.app
+*.appex
+
+# ---------------------------------------------------------------------------
+# Local build markers
+# .ios_build / .iosp_build / .ioss_build / .android_build / .androiddd_build
+# record the commit each Makefile build target last ran at — per-machine state,
+# useful locally, meaningless (and conflict-prone) when shared.
+# ---------------------------------------------------------------------------
+/.*_build
+
+# ---------------------------------------------------------------------------
+# Signing material & secrets — never commit
+# ---------------------------------------------------------------------------
 *.jks
+*.keystore
 *.p8
 *.p12
 *.key
+*.pem
 *.mobileprovision
+*.certSigningRequest
 
-# Metro
-.metro-health-check*
+.env
+.env.*
+!.env.example
 
-# debug
+# ---------------------------------------------------------------------------
+# Logs & debug output
+# ---------------------------------------------------------------------------
+*.log
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+.eslintcache
 
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
+# ---------------------------------------------------------------------------
+# TypeScript
+# ---------------------------------------------------------------------------
 *.tsbuildinfo
 
-example
-
-# generated native folders
-/ios
-/android
+# ---------------------------------------------------------------------------
+# Editors & OS
+# ---------------------------------------------------------------------------
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+.idea/
+*.swp
+*.orig
+*.orig.*
+*.rej
