@@ -1,0 +1,133 @@
+# .easignore — controls what EAS Build uploads into the build context.
+#
+# IMPORTANT: this file REPLACES .gitignore for EAS; it does not supplement it.
+# Per the EAS docs: "If you create a .easignore file, the EAS CLI prioritizes it
+# over the .gitignore file... include all files and directories from your
+# .gitignore file and add additional files you want to ignore."
+#
+# => Anything you add to .gitignore must be mirrored here, or EAS will start
+#    uploading it. The sections below intentionally mirror .gitignore 1:1,
+#    followed by an EAS-only section at the bottom.
+#
+# Do NOT ignore: patches/ (postinstall runs patch-package), audio-engine/,
+# modules/, src/, assets/, audioPresets/, app.json, eas.json, package*.json.
+
+# ===========================================================================
+# Mirrored from .gitignore — keep in sync
+# ===========================================================================
+
+# Dependencies (EAS installs these itself)
+node_modules/
+.pnp
+.pnp.js
+.yarn/cache/
+.yarn/install-state.gz
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+
+# Native build output (local modules: modules/*, audio-engine/*)
+# Unanchored, so these also catch audio-engine/android/build (~1 GB) and
+# modules/alarm-engine/android/build.
+build/
+.cxx/
+.gradle/
+.kotlin/
+local.properties
+*.iml
+captures/
+.externalNativeBuild/
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.derived-debug/
+*.hmap
+*.dSYM
+*.dSYM.zip
+
+# CocoaPods
+Pods/
+
+# Build artifacts
+*.ipa
+*.aab
+*.apk
+*.aar
+*.app
+*.appex
+
+# Local build markers
+/.*_build
+
+# Signing material & secrets — never upload
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+*.certSigningRequest
+
+.env
+.env.*
+!.env.example
+
+# Logs & debug output
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Editors & OS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+.idea/
+*.swp
+*.orig
+*.orig.*
+*.rej
+
+# ===========================================================================
+# EAS-only — not in .gitignore
+# ===========================================================================
+
+# Generated native projects. EAS runs Prebuild itself when these are absent
+# ("If your project does not contain android and ios directories, EAS Build
+# will run Prebuild to generate these native directories"), so shipping the
+# local copies only risks stale Pods/Gradle state leaking into the build.
+# This project is CNG: native source lives in modules/ and audio-engine/,
+# and Info.plist keys live in app.json.
+/ios/
+/android/
+
+# Docs, store copy and tooling — never referenced by app code or the build.
+/docs/
+/.claude/
+/.vscode/
+/Makefile
+/prompts.txt
+/storeListing.md
+/privacyPolicy.md
+/termsOfUse.md
+/README.md
+/AGENTS.md
+/CLAUDE.md
+
+# Uncomment to keep the ~860 MB git history out of local build contexts.
+# Verify a build still succeeds first — EAS reads git metadata before it
+# archives, and this only affects archive contents, but it is unverified here.
+#.git/

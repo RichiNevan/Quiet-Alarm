@@ -385,8 +385,10 @@ ioss:
 	npx expo run:ios --device
 
 # Production build for iOS, with EAS, to be tested on TestFlight.
-# .easignore re-includes the gitignored generated native project files required
-# by the local EAS build context.
+# .easignore controls the build context. It EXCLUDES ios/ and android/: EAS runs
+# prebuild itself when they are absent, so the local copies would only risk
+# stale Pods/Gradle state. Note .easignore *replaces* .gitignore for EAS rather
+# than supplementing it, so new .gitignore rules must be mirrored into it.
 iosss:
 #	make prepareios
 	eas build --platform ios --local --clear-cache
